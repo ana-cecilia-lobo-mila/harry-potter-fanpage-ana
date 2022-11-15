@@ -1,0 +1,525 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #040d18;
+    background-image: url("../imagenes/fondoEstrellas.png");
+    background-position: center center;
+    background-size: 100%;
+}
+
+/*Barra de navegación*/
+header{
+    padding: 2% 0;
+}
+nav ul{
+    justify-content: center;
+    display: flex;
+}
+
+nav ul li{
+    padding: 0 3%;
+    list-style: none;
+}
+
+nav ul li a{
+    color: wheat;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+
+/*Footer*/
+footer{
+    display: block;
+    background-color: #040d18;
+    margin-top: 7%;
+    padding: 3% 0 7% 0;
+    text-align: center;
+}
+
+footer h6{
+    color: wheat;
+    font-size: 1.5vw;
+    display: inline-block;
+    margin-bottom: 3%;
+}
+
+footer a{
+    text-decoration: none;
+    color: #298ab0;
+    font-size: 1.5vw;
+    
+}
+
+footer a img{
+    height: 2vw;
+    margin: 1%;
+}
+
+footer #subida {
+    display: block;
+    text-align: center;
+    margin-top: 2%;
+}
+
+footer #subida img{
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+/*Index*/
+
+/*Barra de navegación del index*/
+.barraInicio {
+    
+    background-image: url("../imagenes/fondoInicio.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #00415B;
+}
+
+
+/*Inicio del index*/
+.inicio{
+    padding-bottom: 10% ;
+}
+
+.inicio h1 {
+    color: wheat;
+    text-align: center;
+    font-size: 9vw;
+    font-family: 'Henny Penny', cursive;
+    padding-top: 8%;
+}
+
+.inicio h2{
+    color: wheat;
+    margin-left: 55%;
+    font-size: 8vw;
+    font-family: 'Henny Penny', cursive;
+}
+
+/*Carrusel index*/
+.carrusel{
+    margin: 10% 0;
+}
+
+.carrusel img{
+    display: block;
+    width: 50%;
+    margin: auto;
+   
+}
+
+/*Datos curiosos index*/
+
+.datosCuriosos h2{
+    color: wheat;
+    font-size: 5vw;
+    text-align: center;
+    margin: 10% 0 3% 0;
+    font-family: 'Henny Penny', cursive;
+    grid-area: h2;
+}
+
+#ordenDatos{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0 7%;
+    gap: 2%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    grid-template-areas: 
+    "h2 h2"
+    "d1 d2"
+    "d3 d4";
+}
+
+.dato1{
+    grid-area: d1;
+    background-color: #081521;
+    
+}
+
+.dato2{
+    grid-area: d2;
+    background-color: #081521;
+}
+
+.dato3{
+    grid-area: d3;
+    background-color: #081521;
+}
+
+.dato4{
+    grid-area: d4;
+    background-color: #081521;
+}
+
+#ordenDatos p{
+    padding: 5%;
+    color: wheat;
+    font-size: 1.7vw;
+    margin: 0 5%
+}
+
+#ordenDatos img{
+    display: block;
+    height: 18vw;
+    margin: 5% auto;
+    
+}
+
+@media screen and (max-width: 600px){
+    #ordenDatos{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr ;
+        grid-template-areas: 
+        "h2"
+        "d1"
+        "d2"
+        "d3"
+        "d4";
+    }
+    #ordenDatos p{
+        font-size: 2.5vw;
+    }
+}
+
+
+
+
+
+
+/*Libros, peliculas y personajes*/
+
+
+.listas ul li{
+    color: wheat;
+    font-size: 1.5vw;
+    list-style: none;
+    text-align: center;
+}
+
+.listas ul li img {
+    height: 15vw;
+    padding: 20% 5% 0 5%;
+    display: block;
+    margin: auto;
+}
+
+#series {
+    display: block;
+    font-size: 4vw;
+    margin: 10% 0; 
+    color: wheat;
+    text-align: center;
+    font-family: 'Henny Penny', cursive;
+}
+
+.listas ul ul:nth-child(1){
+    grid-area: uno;
+}
+
+.listas ul ul:nth-child(2){
+    grid-area: dos;
+}
+
+.listas ul ul:nth-child(3){
+    grid-area: tre;
+}
+
+.listas ul ul:nth-child(4){
+    grid-area: cuatro;
+}
+
+.listas ul ul:nth-child(5){
+    grid-area: cinco;
+}
+
+.listas ul ul:nth-child(6){
+    grid-area: seis;
+}
+
+.listas ul ul:nth-child(7){
+    grid-area: siete;
+}
+
+.listas ul ul:nth-child(8){
+    grid-area: ocho;
+}
+
+.listas ul ul:nth-child(9){
+    grid-area: nueve;
+}
+.listas ul ul:nth-child(10){
+    grid-area: diez;
+}
+.listas ul ul:nth-child(11){
+    grid-area: once;
+}
+.listas ul ul:nth-child(12){
+    grid-area: doce;
+}
+
+.listas .seriePrincipal{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20% 5%; 
+    grid-template-areas:
+    "uno dos tres cuatro"
+    "cinco seis siete ocho";
+    margin: 10%;
+    
+}
+
+@media screen and (max-width: 800px){
+    .listas .seriePrincipal{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 5% 5%; 
+        grid-template-areas:
+        "uno dos"
+        "tres cuatro"
+        "cinco seis"
+        "siete ocho";
+        margin: 10%;
+    }
+    .listas ul li img {
+        padding-top: 5%;
+    }
+    .listas ul li{
+        font-size: 2vw;
+    }
+
+}
+
+.listas .serieAF{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20% 5%;
+    grid-template-areas:
+    "uno dos tres";
+    margin: 10%;
+    
+}
+
+@media screen and (max-width: 500px){
+    .listas .serieAF{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 5% 5%;
+        grid-template-areas:
+        "uno"
+        "dos"
+        "tres";
+        margin: 10%;
+       
+    }
+    .listas ul li{
+        font-size: 2vw;
+    }
+}
+
+.listas .serieHogwarts{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20% 5%;
+    grid-template-areas:
+    "uno dos tres";
+    margin: 10%;
+    
+}
+
+@media screen and (max-width: 500px){
+    .listas .serieHogwarts{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 5% 5%; 
+        grid-template-areas:
+        "uno"
+        "dos"
+        "tres";
+        margin: 10%;
+       
+    }
+    .listas ul li{
+        font-size: 2vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*Libros*/
+.fondoLibros{
+    background-color: #040d18;
+    background-image: url("../imagenes/fondoLibros.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.libros{
+    padding: 10% 0 30% 0;
+}
+
+.fondoLibros h2{
+    font-size: 4vw;
+    color: wheat;
+    font-family: 'Henny Penny', cursive;
+    text-align: center;
+    background-color: #040d18;
+
+}
+
+/*Peliculas*/
+.fondoPeliculas{
+    background-color: #040d18;
+    background-image: url("../imagenes/fondoPeliculas.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.peliculas{
+    padding: 20% 0;
+}
+
+.fondoPeliculas h2{
+    font-size: 4vw;
+    color: wheat;
+    font-family: 'Henny Penny', cursive;
+    text-align: center;
+    background-color: #040d18;
+
+}
+
+
+/*Personajes*/
+.fondoPersonajes{
+    background-color: #040d18;
+    background-image: url("../imagenes/fondoPersonajes.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+
+.personajes{
+    padding: 20% 0;
+}
+
+.fondoPersonajes h2{
+    font-size: 4vw;
+    color: wheat;
+    font-family: 'Henny Penny', cursive;
+    text-align: center;
+    background-color: #040d18;
+
+}
+
+.listas .listaPersonajes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20% 5%;
+    grid-template-areas:
+    "uno dos tres cuatro"
+    "cinco seis siete ocho"
+    "nueve diez once doce";
+    margin: 10%;
+    
+}
+
+@media screen and (max-width: 800px){
+    .listas .listaPersonajes{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 5% 5%; 
+        grid-template-areas:
+        "uno dos"
+        "tres cuatro"
+        "cinco seis"
+        "siete ocho"
+        "nueve diez"
+        "once doce";
+        margin: 10%;
+    }
+    .listas ul li{
+        font-size: 2vw;
+    }
+}
+
+
+
+
+
+
+/*J.K. Rowling*/
+
+.jk h2{
+    font-size: 4vw;
+    margin: 5% 0;
+    color: wheat;
+    text-align: center;
+    font-family: 'Henny Penny', cursive;
+}
+
+.jk img{
+    display: block;
+    height: 50vw;
+    margin: 0 auto;
+}
+
+.jk p{
+    font-size: 1.7vw;
+    margin: 5% 15% ;
+    color: wheat;
+    line-height: 200%;
+    
+}
+
+.jk ul{
+    color: wheat;
+    font-size: 1.5vw;
+    list-style:square;
+}
+
+.jk ul li{
+    margin: 2% 15%;
+    line-height: 200%;
+}
+
+@media screen and (max-width: 800px){
+    .jk p{
+        font-size: 2.3vw;
+    }
+    .jk ul li{
+        font-size: 2.3vw;
+    }
+}
