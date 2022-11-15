@@ -12,8 +12,19 @@ body{
 
 /*Barra de navegación*/
 header{
-    padding: 2% 0;
+    padding-bottom: 2% ;
 }
+
+nav{
+    padding: 2% 0;
+    margin: 0;
+}
+
+nav:hover {
+    background-color: #040d18;
+    transition: all ease-in-out 0.5s;
+}
+
 nav ul{
     justify-content: center;
     display: flex;
@@ -24,10 +35,36 @@ nav ul li{
     list-style: none;
 }
 
+nav ul li:hover{
+    transform: scale(1.1,1.1);
+    transition: ease 0.3s;
+    text-decoration: underline;
+    
+}
+
 nav ul li a{
     color: wheat;
     text-decoration: none;
     font-size: 1.5vw;
+}
+@media screen and (max-width: 900px){
+    nav ul li a{
+        font-size: 2vw;
+    }
+    nav{
+        padding: 5% 0;
+
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    nav ul li a{
+        font-size: 3vw;
+    }
+    nav{
+        padding: 7% 0;
+    }
 }
 
 /*Footer*/
@@ -68,7 +105,38 @@ footer #subida img{
     margin: auto;
 }
 
+@media screen and (max-width: 900px){
+    footer h6{
+        font-size: 3vw;
+    }
+    footer a{
+        font-size: 3vw;
+    }
+    footer a img{
+        height: 4vw;
+        margin: 2%;
+    }
+    footer{
+        padding: 4% 0 8% 0;
+        }
+}
 
+@media screen and (max-width: 600px){
+    footer h6{
+        font-size: 4vw;
+    }
+    footer a{
+        font-size: 4vw;
+    }
+    footer a img{
+        height: 5vw;
+        margin: 3%;
+    }
+    footer{
+    padding: 15% 0 20% 0;
+    margin-top: 20%;
+    }
+} 
 
 
 
@@ -94,6 +162,17 @@ footer #subida img{
     padding-bottom: 10% ;
 }
 
+@media screen and (max-width: 900px){
+    .inicio{
+        padding-bottom: 250px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .inicio{
+        padding-bottom: 320px;
+    }
+} 
 .inicio h1 {
     color: wheat;
     text-align: center;
@@ -101,13 +180,35 @@ footer #subida img{
     font-family: 'Henny Penny', cursive;
     padding-top: 8%;
 }
+@media screen and (max-width: 900px){
+    .inicio h1{
+        font-size: 11vw;
+    }
+}
 
+@media screen and (max-width: 600px){
+    .inicio h1{
+        font-size: 14vw;
+    }
+} 
 .inicio h2{
     color: wheat;
     margin-left: 55%;
     font-size: 8vw;
     font-family: 'Henny Penny', cursive;
 }
+
+@media screen and (max-width: 900px){
+    .inicio h2{
+        font-size: 10vw;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .inicio h2{
+        font-size: 13vw;
+    }
+} 
 
 /*Carrusel index*/
 .carrusel{
@@ -120,7 +221,19 @@ footer #subida img{
     margin: auto;
    
 }
+@media screen and (max-width: 900px){
+    .carrusel img{
+        width: 70%;
+       
+    }
+}
 
+@media screen and (max-width: 600px){
+    .carrusel img{
+        width: 85%;
+       
+    }
+} 
 /*Datos curiosos index*/
 
 .datosCuriosos h2{
@@ -132,6 +245,19 @@ footer #subida img{
     grid-area: h2;
 }
 
+@media screen and (max-width: 900px){
+    .datosCuriosos h2{
+        font-size: 7vw;
+    
+    }
+}
+
+@media screen and (max-width: 600px){
+    .datosCuriosos h2{
+        font-size: 10vw;
+    
+    }
+} 
 #ordenDatos{
     display: grid;
     justify-content: center;
@@ -193,11 +319,23 @@ footer #subida img{
         "d3"
         "d4";
     }
+    
+}
+@media screen and (max-width: 576px){
     #ordenDatos p{
-        font-size: 2.5vw;
+        font-size: 7vw;
+    }
+    #ordenDatos img{
+        height: 35vw;
     }
 }
 
+@media screen and (max-width: 900px){
+    #ordenDatos p{
+        font-size: 3vw;
+    
+    }
+}
 
 
 
@@ -384,6 +522,20 @@ footer #subida img{
     background-size: 100%;
 }
 
+
+@media screen and (max-width: 900px){
+    .fondoLibros{
+        padding-bottom: 250px;
+    }
+    
+}
+@media screen and (max-width: 600px){
+    .fondoLibros{
+        padding-bottom: 320px;
+    }
+
+} 
+
 .libros{
     padding: 10% 0 30% 0;
 }
@@ -402,8 +554,21 @@ footer #subida img{
     background-color: #040d18;
     background-image: url("../imagenes/fondoPeliculas.jpg");
     background-repeat: no-repeat;
+    background-position: center;
     background-size: 100%;
 }
+
+@media screen and (max-width: 900px){
+    .fondoPeliculas{
+        padding-bottom: 250px;
+    }
+    
+}
+@media screen and (max-width: 600px){
+    .fondoPeliculas{
+        padding-bottom: 320px;
+    }
+} 
 
 .peliculas{
     padding: 20% 0;
@@ -428,6 +593,18 @@ footer #subida img{
     background-size: 100%;
     
 }
+
+@media screen and (max-width: 900px){
+    .fondoPersonajes{
+        padding-bottom: 250px;
+    }
+    
+}
+@media screen and (max-width: 600px){
+    .fondoPersonajes{
+        padding-bottom: 320px;
+    }
+} 
 
 .personajes{
     padding: 20% 0;
@@ -490,6 +667,25 @@ footer #subida img{
     font-family: 'Henny Penny', cursive;
 }
 
+@media screen and (max-width: 900px){
+    .jk h2{
+        font-size: 6vw;
+    }
+
+    .jk img{
+        height: 70vw;
+    }
+}
+@media screen and (max-width: 600px){
+    .jk h2{
+        font-size: 8vw;
+    }
+
+    .jk img{
+        height: 90vw;
+    }
+} 
+
 .jk img{
     display: block;
     height: 50vw;
@@ -517,9 +713,18 @@ footer #subida img{
 
 @media screen and (max-width: 800px){
     .jk p{
-        font-size: 2.3vw;
+        font-size: 2.5vw;
     }
     .jk ul li{
-        font-size: 2.3vw;
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .jk p{
+        font-size: 4vw;
+    }
+    .jk ul li{
+        font-size: 4vw;
     }
 }
