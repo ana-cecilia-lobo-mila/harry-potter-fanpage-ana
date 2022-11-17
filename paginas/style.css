@@ -57,7 +57,7 @@ nav ul li a{
 }
 @media screen and (max-width: 900px){
     nav ul li a{
-        font-size: 2.5vw;
+        font-size: 2.3vw;
     }
     nav{
         padding: 5% 0;
@@ -137,7 +137,7 @@ footer #subida img{
         font-size: 3.5vw;
     }
     footer a img{
-        height: 4vw;
+        height: 5.5vw;
         margin: 3%;
     }
     footer{
@@ -307,11 +307,20 @@ footer #subida img{
     font-size: 1.7vw;
     margin: 0 5%;
     line-height: 150%;
+    text-align: center;
 }
+
+#ordenDatos img{
+    display: block;
+    height: 18vw;
+    margin: 5% auto;
+    
+}
+
 
 @media screen and (max-width: 600px){
     #ordenDatos p{
-        font-size: 4vw;
+        font-size: 5vw;
     }
     #ordenDatos img{
         height: 35vw;
@@ -325,12 +334,6 @@ footer #subida img{
     }
 }
 
-#ordenDatos img{
-    display: block;
-    height: 18vw;
-    margin: 5% auto;
-    
-}
 
 @media screen and (max-width: 600px){
     #ordenDatos{
@@ -371,7 +374,7 @@ footer #subida img{
 
 @media screen and (max-width: 600px){
     .listas ul li{
-        font-size: 4vw;
+        font-size: 3vw;
     }
 }
 
@@ -490,7 +493,7 @@ footer #subida img{
         margin: 10%;
     }
     .listas ul li img {
-        padding-top: 25%;
+        padding-top: 20%;
     }
     
 }
@@ -513,7 +516,7 @@ footer #subida img{
         display: grid;
         grid-template-columns: 1fr ;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        gap: 5% 5%;
+        gap: 12% 5%; 
         grid-template-areas:
         "uno"
         "dos"
@@ -539,7 +542,7 @@ footer #subida img{
         display: grid;
         grid-template-columns: 1fr ;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        gap: 5% 5%; 
+        gap: 12% 5%; 
         grid-template-areas:
         "uno"
         "dos"
@@ -792,7 +795,7 @@ footer #subida img{
 
 .jk p{
     font-size: 1.7vw;
-    margin: 5% 15% ;
+    margin: 5% 10% ;
     color: wheat;
     line-height: 200%;
     text-align: center;
@@ -821,9 +824,9 @@ footer #subida img{
 
 @media screen and (max-width: 600px){
     .jk p{
-        font-size: 4vw;
+        font-size: 3vw;
     }
     .jk ul li{
-        font-size: 4vw;
+        font-size: 3vw;
     }
 }
