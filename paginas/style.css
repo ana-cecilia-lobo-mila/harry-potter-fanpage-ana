@@ -1,3 +1,11 @@
+/*
+Próximos arreglos:
+
+- Poner imágenes responsive
+
+
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -49,7 +57,7 @@ nav ul li a{
 }
 @media screen and (max-width: 900px){
     nav ul li a{
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
     nav{
         padding: 5% 0;
@@ -60,7 +68,7 @@ nav ul li a{
 
 @media screen and (max-width: 600px){
     nav ul li a{
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
     nav{
         padding: 7% 0;
@@ -110,7 +118,7 @@ footer #subida img{
         font-size: 3vw;
     }
     footer a{
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
     footer a img{
         height: 4vw;
@@ -123,13 +131,13 @@ footer #subida img{
 
 @media screen and (max-width: 600px){
     footer h6{
-        font-size: 4vw;
+        font-size: 3.5vw;
     }
     footer a{
-        font-size: 4vw;
+        font-size: 3.5vw;
     }
     footer a img{
-        height: 5vw;
+        height: 4vw;
         margin: 3%;
     }
     footer{
@@ -164,13 +172,13 @@ footer #subida img{
 
 @media screen and (max-width: 900px){
     .inicio{
-        padding-bottom: 250px;
+        padding: 125px 0;
     }
 }
 
 @media screen and (max-width: 600px){
     .inicio{
-        padding-bottom: 320px;
+        padding-bottom: 160px 0;
     }
 } 
 .inicio h1 {
@@ -297,7 +305,24 @@ footer #subida img{
     padding: 5%;
     color: wheat;
     font-size: 1.7vw;
-    margin: 0 5%
+    margin: 0 5%;
+    line-height: 150%;
+}
+
+@media screen and (max-width: 600px){
+    #ordenDatos p{
+        font-size: 4vw;
+    }
+    #ordenDatos img{
+        height: 35vw;
+    }
+}
+
+@media screen and (max-width: 900px){
+    #ordenDatos p{
+        font-size: 3vw;
+    
+    }
 }
 
 #ordenDatos img{
@@ -321,21 +346,7 @@ footer #subida img{
     }
     
 }
-@media screen and (max-width: 576px){
-    #ordenDatos p{
-        font-size: 7vw;
-    }
-    #ordenDatos img{
-        height: 35vw;
-    }
-}
 
-@media screen and (max-width: 900px){
-    #ordenDatos p{
-        font-size: 3vw;
-    
-    }
-}
 
 
 
@@ -351,11 +362,39 @@ footer #subida img{
     text-align: center;
 }
 
+@media screen and (max-width: 900px){
+    .listas ul li{
+        font-size: 2.5vw;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    .listas ul li{
+        font-size: 4vw;
+    }
+}
+
 .listas ul li img {
     height: 15vw;
     padding: 20% 5% 0 5%;
     display: block;
     margin: auto;
+}
+
+@media screen and (max-width: 800px){
+
+    .listas ul li img {
+        height: 30vw;
+        
+    }
+}
+
+@media screen and (max-width: 600px){
+    
+    .listas ul li img {
+        height: 35vw;
+    }
 }
 
 #series {
@@ -365,6 +404,19 @@ footer #subida img{
     color: wheat;
     text-align: center;
     font-family: 'Henny Penny', cursive;
+}
+
+@media screen and (max-width: 900px){
+    #series{
+        font-size: 6vw;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    #series{
+        font-size: 9vw;
+    }
 }
 
 .listas ul ul:nth-child(1){
@@ -438,13 +490,12 @@ footer #subida img{
         margin: 10%;
     }
     .listas ul li img {
-        padding-top: 5%;
+        padding-top: 25%;
     }
-    .listas ul li{
-        font-size: 2vw;
-    }
-
+    
 }
+
+
 
 .listas .serieAF{
     display: grid;
@@ -469,9 +520,6 @@ footer #subida img{
         "tres";
         margin: 10%;
        
-    }
-    .listas ul li{
-        font-size: 2vw;
     }
 }
 
@@ -498,10 +546,7 @@ footer #subida img{
         "tres";
         margin: 10%;
        
-    }
-    .listas ul li{
-        font-size: 2vw;
-    }
+}
 }
 
 
@@ -523,22 +568,22 @@ footer #subida img{
 }
 
 
+.libros{
+    padding: 10% 0 30% 0;
+}
+
 @media screen and (max-width: 900px){
-    .fondoLibros{
-        padding-bottom: 250px;
+    .libros{
+        padding: 125px 0;
     }
     
 }
 @media screen and (max-width: 600px){
-    .fondoLibros{
-        padding-bottom: 320px;
+    .libros{
+        padding: 160px 0;
     }
 
 } 
-
-.libros{
-    padding: 10% 0 30% 0;
-}
 
 .fondoLibros h2{
     font-size: 4vw;
@@ -549,6 +594,20 @@ footer #subida img{
 
 }
 
+@media screen and (max-width: 900px){
+    .fondoLibros h2{
+        font-size: 6vw;
+    
+    }
+}
+
+@media screen and (max-width: 600px){
+    .fondoLibros h2{
+        font-size: 9vw;
+    
+    }
+} 
+
 /*Peliculas*/
 .fondoPeliculas{
     background-color: #040d18;
@@ -558,20 +617,21 @@ footer #subida img{
     background-size: 100%;
 }
 
+.peliculas{
+    padding: 20% 0;
+}
+
 @media screen and (max-width: 900px){
-    .fondoPeliculas{
-        padding-bottom: 250px;
+    .peliculas{
+        padding: 125px 0;
     }
     
 }
 @media screen and (max-width: 600px){
-    .fondoPeliculas{
-        padding-bottom: 320px;
+    .peliculas{
+        padding: 160px 0;
     }
-} 
 
-.peliculas{
-    padding: 20% 0;
 }
 
 .fondoPeliculas h2{
@@ -582,6 +642,20 @@ footer #subida img{
     background-color: #040d18;
 
 }
+
+@media screen and (max-width: 900px){
+    .fondoPeliculas h2{
+        font-size: 6vw;
+    
+    }
+}
+
+@media screen and (max-width: 600px){
+    .fondoPeliculas h2{
+        font-size: 9vw;
+    
+    }
+} 
 
 
 /*Personajes*/
@@ -594,20 +668,22 @@ footer #subida img{
     
 }
 
+
+.personajes{
+    padding: 20% 0;
+}
+
 @media screen and (max-width: 900px){
-    .fondoPersonajes{
-        padding-bottom: 250px;
+    .personajes{
+        padding: 125px 0;
     }
     
 }
 @media screen and (max-width: 600px){
-    .fondoPersonajes{
-        padding-bottom: 320px;
+    .personajes{
+        padding: 160px 0;
     }
-} 
 
-.personajes{
-    padding: 20% 0;
 }
 
 .fondoPersonajes h2{
@@ -617,6 +693,20 @@ footer #subida img{
     text-align: center;
     background-color: #040d18;
 
+}
+
+@media screen and (max-width: 900px){
+    .fondoPersonajes h2{
+        font-size: 6vw;
+    
+    }
+}
+
+@media screen and (max-width: 600px){
+    .fondoPersonajes h2{
+        font-size: 9vw;
+    
+    }
 }
 
 .listas .listaPersonajes{
@@ -647,9 +737,7 @@ footer #subida img{
         "once doce";
         margin: 10%;
     }
-    .listas ul li{
-        font-size: 2vw;
-    }
+    
 }
 
 
@@ -670,21 +758,18 @@ footer #subida img{
 @media screen and (max-width: 900px){
     .jk h2{
         font-size: 6vw;
-    }
-
-    .jk img{
-        height: 70vw;
+    
     }
 }
+
 @media screen and (max-width: 600px){
     .jk h2{
-        font-size: 8vw;
+        font-size: 9vw;
+    
     }
+}
 
-    .jk img{
-        height: 90vw;
-    }
-} 
+
 
 .jk img{
     display: block;
@@ -692,12 +777,25 @@ footer #subida img{
     margin: 0 auto;
 }
 
+@media screen and (max-width: 900px){
+
+    .jk img{
+        height: 70vw;
+    }
+}
+@media screen and (max-width: 600px){
+
+    .jk img{
+        height: 90vw;
+    }
+} 
+
 .jk p{
     font-size: 1.7vw;
     margin: 5% 15% ;
     color: wheat;
     line-height: 200%;
-    
+    text-align: center;
 }
 
 .jk ul{
@@ -709,6 +807,7 @@ footer #subida img{
 .jk ul li{
     margin: 2% 15%;
     line-height: 200%;
+    text-align: center;
 }
 
 @media screen and (max-width: 800px){
