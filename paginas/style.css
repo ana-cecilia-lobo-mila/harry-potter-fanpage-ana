@@ -3,7 +3,6 @@ Próximos arreglos:
 
 - Poner imágenes responsive
 
-
 */
 
 * {
@@ -170,17 +169,6 @@ footer #subida img{
     padding-bottom: 10% ;
 }
 
-@media screen and (max-width: 900px){
-    .inicio{
-        padding: 125px 0;
-    }
-}
-
-@media screen and (max-width: 600px){
-    .inicio{
-        padding-bottom: 160px 0;
-    }
-} 
 .inicio h1 {
     color: wheat;
     text-align: center;
@@ -188,35 +176,13 @@ footer #subida img{
     font-family: 'Henny Penny', cursive;
     padding-top: 8%;
 }
-@media screen and (max-width: 900px){
-    .inicio h1{
-        font-size: 11vw;
-    }
-}
 
-@media screen and (max-width: 600px){
-    .inicio h1{
-        font-size: 14vw;
-    }
-} 
 .inicio h2{
     color: wheat;
     margin-left: 55%;
     font-size: 8vw;
     font-family: 'Henny Penny', cursive;
 }
-
-@media screen and (max-width: 900px){
-    .inicio h2{
-        font-size: 10vw;
-    }
-}
-
-@media screen and (max-width: 600px){
-    .inicio h2{
-        font-size: 13vw;
-    }
-} 
 
 /*Carrusel index*/
 .carrusel{
@@ -229,19 +195,7 @@ footer #subida img{
     margin: auto;
    
 }
-@media screen and (max-width: 900px){
-    .carrusel img{
-        width: 70%;
-       
-    }
-}
-
-@media screen and (max-width: 600px){
-    .carrusel img{
-        width: 85%;
-       
-    }
-} 
+ 
 /*Datos curiosos index*/
 
 .datosCuriosos h2{
@@ -252,24 +206,11 @@ footer #subida img{
     font-family: 'Henny Penny', cursive;
     grid-area: h2;
 }
-
-@media screen and (max-width: 900px){
-    .datosCuriosos h2{
-        font-size: 7vw;
-    
-    }
-}
-
-@media screen and (max-width: 600px){
-    .datosCuriosos h2{
-        font-size: 10vw;
-    
-    }
-} 
+ 
 #ordenDatos{
     display: grid;
     justify-content: center;
-    align-items: center;
+    align-items:stretch;
     margin: 0 7%;
     gap: 2%;
     grid-template-columns: 1fr 1fr;
@@ -317,25 +258,67 @@ footer #subida img{
     
 }
 
-
-@media screen and (max-width: 600px){
-    #ordenDatos p{
-        font-size: 5vw;
-    }
-    #ordenDatos img{
-        height: 35vw;
-    }
-}
-
 @media screen and (max-width: 900px){
+    .barraInicio {
+        background-image: url("../imagenes/castilloTablet.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-color: #00415B;
+    }
+    .inicio{
+        padding: 125px 0;
+    }
+    .inicio h1{
+        font-size: 11vw;
+    }
+    .inicio h2{
+        font-size: 10vw;
+    }
+    .carrusel img{
+        width: 70%;
+       
+    }
+    .datosCuriosos h2{
+        font-size: 7vw;
+    
+    }
     #ordenDatos p{
         font-size: 3vw;
     
     }
 }
-
-
 @media screen and (max-width: 600px){
+    .barraInicio {
+        background-image: url("../imagenes/castilloCelular.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-color: #00415B;
+    }
+    .inicio{
+        padding-bottom: 160px 0;
+    }
+    .inicio h1{
+        font-size: 14vw;
+    }
+    .inicio h2{
+        font-size: 13vw;
+    }
+    .carrusel img{
+        width: 85%;
+       
+    }
+    .datosCuriosos h2{
+        font-size: 10vw;
+    
+    }
+    #ordenDatos p{
+        font-size: 3.5vw;
+    }
+    #ordenDatos img{
+        height: 35vw;
+    }
     #ordenDatos{
         display: grid;
         grid-template-columns: 1fr ;
@@ -347,8 +330,9 @@ footer #subida img{
         "d3"
         "d4";
     }
-    
 }
+
+
 
 
 
@@ -365,39 +349,11 @@ footer #subida img{
     text-align: center;
 }
 
-@media screen and (max-width: 900px){
-    .listas ul li{
-        font-size: 2.5vw;
-    }
-
-}
-
-@media screen and (max-width: 600px){
-    .listas ul li{
-        font-size: 3vw;
-    }
-}
-
 .listas ul li img {
     height: 15vw;
     padding: 20% 5% 0 5%;
     display: block;
     margin: auto;
-}
-
-@media screen and (max-width: 800px){
-
-    .listas ul li img {
-        height: 30vw;
-        
-    }
-}
-
-@media screen and (max-width: 600px){
-    
-    .listas ul li img {
-        height: 35vw;
-    }
 }
 
 #series {
@@ -410,6 +366,14 @@ footer #subida img{
 }
 
 @media screen and (max-width: 900px){
+    .listas ul li{
+        font-size: 2.5vw;
+    }
+
+    .listas ul li img {
+        height: 30vw;
+        
+    }
     #series{
         font-size: 6vw;
     }
@@ -417,6 +381,12 @@ footer #subida img{
 }
 
 @media screen and (max-width: 600px){
+    .listas ul li{
+        font-size: 3vw;
+    }
+    .listas ul li img {
+        height: 35vw;
+    }
     #series{
         font-size: 9vw;
     }
@@ -511,21 +481,6 @@ footer #subida img{
     
 }
 
-@media screen and (max-width: 500px){
-    .listas .serieAF{
-        display: grid;
-        grid-template-columns: 1fr ;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        gap: 12% 5%; 
-        grid-template-areas:
-        "uno"
-        "dos"
-        "tres";
-        margin: 10%;
-       
-    }
-}
-
 .listas .serieHogwarts{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -538,7 +493,7 @@ footer #subida img{
 }
 
 @media screen and (max-width: 500px){
-    .listas .serieHogwarts{
+    .listas .serieAF, .listas .serieHogwarts{
         display: grid;
         grid-template-columns: 1fr ;
         grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -575,19 +530,6 @@ footer #subida img{
     padding: 10% 0 30% 0;
 }
 
-@media screen and (max-width: 900px){
-    .libros{
-        padding: 125px 0;
-    }
-    
-}
-@media screen and (max-width: 600px){
-    .libros{
-        padding: 160px 0;
-    }
-
-} 
-
 .fondoLibros h2{
     font-size: 4vw;
     color: wheat;
@@ -596,20 +538,7 @@ footer #subida img{
     background-color: #040d18;
 
 }
-
-@media screen and (max-width: 900px){
-    .fondoLibros h2{
-        font-size: 6vw;
-    
-    }
-}
-
-@media screen and (max-width: 600px){
-    .fondoLibros h2{
-        font-size: 9vw;
-    
-    }
-} 
+ 
 
 /*Peliculas*/
 .fondoPeliculas{
@@ -624,19 +553,6 @@ footer #subida img{
     padding: 20% 0;
 }
 
-@media screen and (max-width: 900px){
-    .peliculas{
-        padding: 125px 0;
-    }
-    
-}
-@media screen and (max-width: 600px){
-    .peliculas{
-        padding: 160px 0;
-    }
-
-}
-
 .fondoPeliculas h2{
     font-size: 4vw;
     color: wheat;
@@ -645,20 +561,6 @@ footer #subida img{
     background-color: #040d18;
 
 }
-
-@media screen and (max-width: 900px){
-    .fondoPeliculas h2{
-        font-size: 6vw;
-    
-    }
-}
-
-@media screen and (max-width: 600px){
-    .fondoPeliculas h2{
-        font-size: 9vw;
-    
-    }
-} 
 
 
 /*Personajes*/
@@ -676,19 +578,6 @@ footer #subida img{
     padding: 20% 0;
 }
 
-@media screen and (max-width: 900px){
-    .personajes{
-        padding: 125px 0;
-    }
-    
-}
-@media screen and (max-width: 600px){
-    .personajes{
-        padding: 160px 0;
-    }
-
-}
-
 .fondoPersonajes h2{
     font-size: 4vw;
     color: wheat;
@@ -699,14 +588,60 @@ footer #subida img{
 }
 
 @media screen and (max-width: 900px){
-    .fondoPersonajes h2{
+    .fondoLibros{
+        background-image: url("../imagenes/librosTablet.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .fondoPeliculas{
+        background-image: url("../imagenes/PeliculasTablets.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .fondoPersonajes{
+        background-image: url("../imagenes/personjesTablet.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .libros, .peliculas, .personajes{
+        padding: 190px 0;
+    }
+    .fondoLibros h2, .fondoPeliculas h2, .fondoPersonajes h2{
         font-size: 6vw;
-    
+        
+        
+        
     }
 }
 
 @media screen and (max-width: 600px){
-    .fondoPersonajes h2{
+    .fondoLibros{
+        background-image: url("../imagenes/librosCelular.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .fondoPeliculas{
+        background-image: url("../imagenes/peliculasCelular.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .fondoPersonajes{
+        background-image: url("../imagenes/PersonajesCelures.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .libros, .peliculas, .personajes{
+        padding: 230px 0;
+    }
+    .fondoLibros h2, .fondoPeliculas h2, .fondoPersonajes h2{
         font-size: 9vw;
     
     }
@@ -757,41 +692,11 @@ footer #subida img{
     text-align: center;
     font-family: 'Henny Penny', cursive;
 }
-
-@media screen and (max-width: 900px){
-    .jk h2{
-        font-size: 6vw;
-    
-    }
-}
-
-@media screen and (max-width: 600px){
-    .jk h2{
-        font-size: 9vw;
-    
-    }
-}
-
-
-
 .jk img{
     display: block;
     height: 50vw;
     margin: 0 auto;
 }
-
-@media screen and (max-width: 900px){
-
-    .jk img{
-        height: 70vw;
-    }
-}
-@media screen and (max-width: 600px){
-
-    .jk img{
-        height: 90vw;
-    }
-} 
 
 .jk p{
     font-size: 1.7vw;
@@ -813,7 +718,16 @@ footer #subida img{
     text-align: center;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 900px){
+    .jk h2{
+        font-size: 6vw;
+    
+    }
+
+    .jk img{
+        height: 70vw;
+    }
+
     .jk p{
         font-size: 2.5vw;
     }
@@ -823,6 +737,13 @@ footer #subida img{
 }
 
 @media screen and (max-width: 600px){
+    .jk h2{
+        font-size: 9vw;
+    
+    }
+    .jk img{
+        height: 90vw;
+    }
     .jk p{
         font-size: 3vw;
     }
