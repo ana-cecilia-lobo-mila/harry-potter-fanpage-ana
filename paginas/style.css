@@ -1,7 +1,6 @@
 /*
 Próximos arreglos:
 
-- Poner imágenes responsive
 
 */
 
@@ -160,14 +159,11 @@ footer #subida img{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
-    background-color: #00415B;
+    background-color: #040d18;
 }
 
 
 /*Inicio del index*/
-.inicio{
-    padding-bottom: 10% ;
-}
 
 .inicio h1 {
     color: wheat;
