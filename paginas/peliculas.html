@@ -9,6 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Películas</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
 
@@ -34,20 +36,20 @@
         <ul>
             <li id="series">Harry Potter</li>
             <ul class="seriePrincipal">
-                <li>Harry Potter y la piedra filosofal<a href="https://www.wizardingworld.com/discover/films/harry-potter-and-the-philosophers-stone" target="_blank"><img src="../imagenes/peliHP1.jpg"></a></li>
-                <li>Harry Potter y la cámara secreta<a href="https://www.wizardingworld.com/discover/films/harry-potter-and-the-chamber-of-secrets" target="_blank"><img src="../imagenes/peliHP2.jpg"></a></li>
-                <li>Harry Potter y el prisionero de azkaban<a href="https://www.wizardingworld.com/discover/films/harry-potter-and-the-prisoner-of-azkaban" target="_blank"><img src="../imagenes/peliHP3.jpg"></a></li>
-                <li>Harry Potter y el caliz de fuego<a href="https://www.wizardingworld.com/discover/films/harry-potter-and-the-goblet-of-fire" target="_blank"><img src="../imagenes/peliHP4.jpg"></a></li>
-                <li>Harry Potter y la orden del fenix<a href="https://www.wizardingworld.com/discover/films/harry-potter-and-the-order-of-the-phoenix" target="_blank"><img src="../imagenes/peliHP5.jpg"></a></li>
-                <li>Harry Potter y el principe mestizo<a href="https://www.wizardingworld.com/discover/films/harry-potter-and-the-half-blood-prince" target="_blank"><img src="../imagenes/peliHP6.jpg"></a></li>
-                <li>Harry Potter y las reliquias de la muerte parte 1<a href="https://www.wizardingworld.com/discover/films/harry-potter-and-the-deathly-hallows-part-1" target="_blank"><img src="../imagenes/peliHP7.webp"></a></li>
-                <li>Harry Potter y las reliquias de la muerte parte 2<a href="https://www.wizardingworld.com/discover/films/harry-potter-and-the-deathly-hallows-part-2" target="_blank"><img src="../imagenes/peliHP8.webp"></a></li>
+                <li data-aos="flip-left">Harry Potter y la piedra filosofal<a href="https://www.wizardingworld.com/discover/films/harry-potter-and-the-philosophers-stone" target="_blank"><img src="../imagenes/peliHP1.jpg"></a></li>
+                <li data-aos="flip-left">Harry Potter y la cámara secreta<a href="https://www.wizardingworld.com/discover/films/harry-potter-and-the-chamber-of-secrets" target="_blank"><img src="../imagenes/peliHP2.jpg"></a></li>
+                <li data-aos="flip-left">Harry Potter y el prisionero de azkaban<a href="https://www.wizardingworld.com/discover/films/harry-potter-and-the-prisoner-of-azkaban" target="_blank"><img src="../imagenes/peliHP3.jpg"></a></li>
+                <li data-aos="flip-left">Harry Potter y el caliz de fuego<a href="https://www.wizardingworld.com/discover/films/harry-potter-and-the-goblet-of-fire" target="_blank"><img src="../imagenes/peliHP4.jpg"></a></li>
+                <li data-aos="flip-left">Harry Potter y la orden del fenix<a href="https://www.wizardingworld.com/discover/films/harry-potter-and-the-order-of-the-phoenix" target="_blank"><img src="../imagenes/peliHP5.jpg"></a></li>
+                <li data-aos="flip-left">Harry Potter y el principe mestizo<a href="https://www.wizardingworld.com/discover/films/harry-potter-and-the-half-blood-prince" target="_blank"><img src="../imagenes/peliHP6.jpg"></a></li>
+                <li data-aos="flip-left">Harry Potter y las reliquias de la muerte parte 1<a href="https://www.wizardingworld.com/discover/films/harry-potter-and-the-deathly-hallows-part-1" target="_blank"><img src="../imagenes/peliHP7.webp"></a></li>
+                <li data-aos="flip-left">Harry Potter y las reliquias de la muerte parte 2<a href="https://www.wizardingworld.com/discover/films/harry-potter-and-the-deathly-hallows-part-2" target="_blank"><img src="../imagenes/peliHP8.webp"></a></li>
             </ul>
             <li id="series">Animales fantásticos</li>
             <ul class="serieAF">
-                <li>Animales fantásticos y dónde encontrarlos<a href="https://www.wizardingworld.com/discover/films/fantastic-beasts-and-where-to-find-them" target="_blank"><img src="../imagenes/peliAF1.jpg"></a></li>
-                <li>Animales fantásticos: los crímenes de Grindewald<a href="https://www.wizardingworld.com/discover/films/fantastic-beasts-the-crimes-of-grindelwald" target="_blank"><img src="../imagenes/peliAF2.jpg"></a></li>
-                <li>Animales fantásticos: los secretos de Dumbledore <img src="../imagenes/peliAF3.jpg"></li>
+                <li data-aos="flip-right">Animales fantásticos y dónde encontrarlos<a href="https://www.wizardingworld.com/discover/films/fantastic-beasts-and-where-to-find-them" target="_blank"><img src="../imagenes/peliAF1.jpg"></a></li>
+                <li data-aos="flip-right">Animales fantásticos: los crímenes de Grindewald<a href="https://www.wizardingworld.com/discover/films/fantastic-beasts-the-crimes-of-grindelwald" target="_blank"><img src="../imagenes/peliAF2.jpg"></a></li>
+                <li data-aos="flip-right">Animales fantásticos: los secretos de Dumbledore <img src="../imagenes/peliAF3.jpg"></li>
             </ul>
         </ul>
     </main>
@@ -65,5 +67,8 @@
         
         <a id="subida" href="#arriba">Ir arriba <img src="../imagenes/flecha.jpg"></a>
     </footer>
+    <script>
+        AOS.init(duration= "1200");
+    </script>
 </body>
 </html>

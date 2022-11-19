@@ -9,6 +9,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 <body>
 
@@ -41,22 +44,22 @@
         <div id="ordenDatos">
             <h2>¿Sabías que...?</h2>
 
-            <div class="dato1">
+            <div class="dato1" data-aos="flip-left">
                 <img src="./imagenes/dato1.jpg"> 
                 <p>Los primeros cinco años que Rowling trabajó en los libros de Harry Potter se dedicaron a determinar las reglas sobre lo que sus personajes podían y no podían hacer.</p>
             </div>
 
-            <div class="dato2">
+            <div class="dato2" data-aos="flip-left">
                 <img src="./imagenes/dato2.jpg"> 
                 <p>Harry Potter y J.K Rowling cumplen años el mismo día (31 de julio).</p>
             </div>
 
-            <div class="dato3" >
+            <div class="dato3" data-aos="flip-right">
                 <img src="./imagenes/dato3.png"> 
                 <p>Entre las múltiples mascotas y animales que aparecen en la saga, destacan sobre todo Crookshanks, gato de Hermione, y Scabbers, rata de Ron. Durante Harry Potter y el prisionero de Azkaban, el primero se tomó en serio su papel y se comió a la segunda, teniendo que buscarle un reemplazo.</p>
             </div>
 
-            <div class="dato4" >
+            <div class="dato4" data-aos="flip-right">
                 <img src="./imagenes/dato4.jpg"> 
                 <p>Emma Watson, quien interpretaba a Hermione Granger, sufrió un aparatoso accidente en una de las escenas de  Harry Potter y la Cámara Secreta. Debido a este incidente, la actriz tuvo que hacer uso de una escayola que los realizadores intentaron ocultar. Si se observa la película detenidamente, hay escenas donde se vislumbra.</p>
             </div>
@@ -77,6 +80,8 @@
         
         <a id="subida" href="#arriba">Ir arriba <img src="./imagenes/flecha.jpg"></a>
     </footer>
-
+    <script>
+        AOS.init(duration= "1200");
+    </script>
 </body>
 </html>
