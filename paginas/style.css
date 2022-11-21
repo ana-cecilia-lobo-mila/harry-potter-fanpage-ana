@@ -1,7 +1,7 @@
 /*
 Próximos arreglos:
 
-
+- Hover de footer
 */
 
 * {
@@ -14,6 +14,7 @@ body{
     background-image: url("../imagenes/fondoEstrellas.png");
     background-position: center center;
     background-size: 100%;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /*Barra de navegación*/
@@ -39,6 +40,7 @@ nav ul{
 nav ul li{
     padding: 0 3%;
     list-style: none;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 nav ul li:hover{
@@ -46,6 +48,10 @@ nav ul li:hover{
     transition: ease 0.3s;
     text-decoration: underline;
     
+}
+
+nav ul li a:hover{
+    color: wheat;
 }
 
 nav ul li a{
@@ -87,12 +93,14 @@ footer h6{
     font-size: 1.5vw;
     display: inline-block;
     margin-bottom: 3%;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 footer a{
     text-decoration: none;
     color: #298ab0;
     font-size: 1.5vw;
+    font-family: 'Times New Roman', Times, serif;
     
 }
 
@@ -154,7 +162,6 @@ footer #subida img{
 
 /*Barra de navegación del index*/
 .barraInicio {
-    
     background-image: url("../imagenes/fondoInicio.jpg");
     background-position: center center;
     background-repeat: no-repeat;
@@ -171,6 +178,7 @@ footer #subida img{
     font-size: 9vw;
     font-family: 'Henny Penny', cursive;
     padding-top: 8%;
+    margin-top: 5%;
 }
 
 .inicio h2{
@@ -184,13 +192,6 @@ footer #subida img{
 .carrusel{
     margin: 10% 0;
 }
-
-.carrusel img{
-    display: block;
-    width: 50%;
-    margin: auto;
-   
-}
  
 /*Datos curiosos index*/
 
@@ -202,40 +203,14 @@ footer #subida img{
     font-family: 'Henny Penny', cursive;
     grid-area: h2;
 }
- 
+
 #ordenDatos{
-    display: grid;
-    justify-content: center;
     align-items:stretch;
-    margin: 0 7%;
-    gap: 2%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr;
-    grid-template-areas: 
-    "h2 h2"
-    "d1 d2"
-    "d3 d4";
 }
 
-.dato1{
-    grid-area: d1;
+.dato{
     background-color: #081521;
-    
-}
-
-.dato2{
-    grid-area: d2;
-    background-color: #081521;
-}
-
-.dato3{
-    grid-area: d3;
-    background-color: #081521;
-}
-
-.dato4{
-    grid-area: d4;
-    background-color: #081521;
+    margin: 3%;
 }
 
 #ordenDatos p{
@@ -249,7 +224,7 @@ footer #subida img{
 
 #ordenDatos img{
     display: block;
-    height: 18vw;
+    height: 15vw;
     margin: 5% auto;
     
 }
@@ -271,19 +246,15 @@ footer #subida img{
     .inicio h2{
         font-size: 10vw;
     }
-    .carrusel img{
-        width: 70%;
-       
-    }
     .datosCuriosos h2{
         font-size: 7vw;
     
     }
     #ordenDatos p{
-        font-size: 3vw;
-    
+        font-size: 2.5vw;
     }
 }
+
 @media screen and (max-width: 600px){
     .barraInicio {
         background-image: url("../imagenes/castilloCelular.jpg");
@@ -301,10 +272,6 @@ footer #subida img{
     .inicio h2{
         font-size: 13vw;
     }
-    .carrusel img{
-        width: 85%;
-       
-    }
     .datosCuriosos h2{
         font-size: 10vw;
     
@@ -314,17 +281,6 @@ footer #subida img{
     }
     #ordenDatos img{
         height: 35vw;
-    }
-    #ordenDatos{
-        display: grid;
-        grid-template-columns: 1fr ;
-        grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr ;
-        grid-template-areas: 
-        "h2"
-        "d1"
-        "d2"
-        "d3"
-        "d4";
     }
 }
 

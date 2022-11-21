@@ -1,87 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="./paginas/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+    
+  <!-- Animaciones -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Mi CSS  -->
+  <link rel="stylesheet" href="./paginas/style.css">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
 
 </head>
 <body>
 
-    <!--Barra de navegación e inicio-->
-    <header class="barraInicio">
-        <nav>
-            <ul>
-                <li id="arriba"><a href="./index.html">Inicio</a></li>
-                <li><a href="./paginas/libros.html">Libros</a></li>
-                <li><a href="./paginas/peliculas.html">Películas</a></li>
-                <li><a href="./paginas/personajes.html">Personajes</a></li>
-                <li><a href="./paginas/jkrowling.html">J.K.Rowling</a></li>
-            </ul>
-        </nav>
+  <!--Barra de navegación e inicio-->
+  <header class="barraInicio">
+    <nav>
+      <ul>
+        <li id="arriba"><a href="./index.html">Inicio</a></li>
+        <li><a href="./paginas/libros.html">Libros</a></li>
+        <li><a href="./paginas/peliculas.html">Películas</a></li>
+        <li><a href="./paginas/personajes.html">Personajes</a></li>
+        <li><a href="./paginas/jkrowling.html">J.K.Rowling</a></li>
+      </ul>
+    </nav>
 
-        <main class="inicio" >
-            <h1>Wizarding</h1>
-            <h2>World</h2>
-        </main>
-    </header>
+    <main class="inicio" >
+        <h1>Wizarding</h1>
+        <h2>World</h2>
+    </main>
+  </header>
 
-    <!--Carrusel de fotos-->
-    <section class="carrusel">
-        <img src="./imagenes/fotoCarrusel1.jpg">
-    </section>
+  <!--Carrusel de fotos-->
+  <section class="carrusel">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div id="carouselExampleIndicators" class="col-11 carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./imagenes/fotoCarrusel1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./imagenes/fotoCarrusel3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./imagenes/fotoCarrusel4.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!--Sección de datos curiosos-->
-    <section class="datosCuriosos">
+  <!--Sección de datos curiosos-->
+  <section class="datosCuriosos">
 
-        <div id="ordenDatos">
-            <h2>¿Sabías que...?</h2>
+    <div id="ordenDatos">
+      <h2>¿Sabías que...?</h2>
 
-            <div class="dato1" data-aos="flip-left">
-                <img src="./imagenes/dato1.jpg"> 
-                <p>Los primeros cinco años que Rowling trabajó en los libros de Harry Potter se dedicaron a determinar las reglas sobre lo que sus personajes podían y no podían hacer.</p>
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-5 col-md-5 col-sm-10 col-10 dato " data-aos="flip-left">
+              <img src="./imagenes/dato1.jpg"> 
+              <p>Los primeros cinco años que Rowling trabajó en los libros de Harry Potter se dedicaron a determinar las reglas sobre lo que sus personajes podían y no podían hacer.</p>
             </div>
 
-            <div class="dato2" data-aos="flip-left">
-                <img src="./imagenes/dato2.jpg"> 
-                <p>Harry Potter y J.K Rowling cumplen años el mismo día (31 de julio).</p>
+            <div class="col-lg-5 col-md-5 col-sm-10 col-10 dato" data-aos="flip-left">
+              <img src="./imagenes/dato2.jpg"> 
+              <p>Harry Potter y J.K Rowling cumplen años el mismo día (31 de julio).</p>
             </div>
 
-            <div class="dato3" data-aos="flip-right">
-                <img src="./imagenes/dato3.png"> 
-                <p>Entre las múltiples mascotas y animales que aparecen en la saga, destacan sobre todo Crookshanks, gato de Hermione, y Scabbers, rata de Ron. Durante Harry Potter y el prisionero de Azkaban, el primero se tomó en serio su papel y se comió a la segunda, teniendo que buscarle un reemplazo.</p>
+            <div class="col-lg-5 col-md-5 col-sm-10 col-10 dato" data-aos="flip-right">
+              <img src="./imagenes/dato3.png"> 
+              <p>Entre las múltiples mascotas y animales que aparecen en la saga, destacan sobre todo Crookshanks, gato de Hermione, y Scabbers, rata de Ron. Durante Harry Potter y el prisionero de Azkaban, el primero se tomó en serio su papel y se comió a la segunda, teniendo que buscarle un reemplazo.</p>
             </div>
 
-            <div class="dato4" data-aos="flip-right">
+            <div class="col-lg-5 col-md-5 col-sm-10 col-10 dato" data-aos="flip-right">
                 <img src="./imagenes/dato4.jpg"> 
                 <p>Emma Watson, quien interpretaba a Hermione Granger, sufrió un aparatoso accidente en una de las escenas de  Harry Potter y la Cámara Secreta. Debido a este incidente, la actriz tuvo que hacer uso de una escayola que los realizadores intentaron ocultar. Si se observa la película detenidamente, hay escenas donde se vislumbra.</p>
             </div>
-            
-        </div>
+          </div>
+      </div>      
+    </div>
 
-    </section>
+  </section>
 
-    <!--Pie de página-->
-    <footer>
-        <h6>Sitio oficial: </h6>
-        <a href="https://www.wizardingworld.com" target="_blank">Wizarding World</a> <br>
-        <!--Links que llevan a las redes sociales, con sus íconos-->
-        <a href="https://www.facebook.com/wizardingworld" target="_blank"><img src="./imagenes/facebook.png" alt="logo-de-facebook" ></a>
-        <a href="https://www.instagram.com/wizardingworld/" target="_blank"><img src="./imagenes/instagram.png"></a>
-        <a href="https://twitter.com/wizardingworld" target="_blank"><img src="./imagenes/twitter.png"></a>
-        <a href="https://www.youtube.com/channel/UChPRO1CB_Hvd0TvKRU62iSQ" target="_blank"><img src="./imagenes/youtube.png"></a>
+  <!--Pie de página-->
+  <footer>
+    <h6>Sitio oficial: </h6>
+    <a href="https://www.wizardingworld.com" target="_blank">Wizarding World</a> <br>
+    <!--Links que llevan a las redes sociales, con sus íconos-->
+    <a href="https://www.facebook.com/wizardingworld" target="_blank"><img src="./imagenes/facebook.png" alt="logo-de-facebook" ></a>
+    <a href="https://www.instagram.com/wizardingworld/" target="_blank"><img src="./imagenes/instagram.png"></a>
+    <a href="https://twitter.com/wizardingworld" target="_blank"><img src="./imagenes/twitter.png"></a>
+    <a href="https://www.youtube.com/channel/UChPRO1CB_Hvd0TvKRU62iSQ" target="_blank"><img src="./imagenes/youtube.png"></a>
         
-        <a id="subida" href="#arriba">Ir arriba <img src="./imagenes/flecha.jpg"></a>
-    </footer>
-    <script>
-        AOS.init(duration= "1200");
-    </script>
+    <a id="subida" href="#arriba">Ir arriba <img src="./imagenes/flecha.jpg"></a>
+  </footer>
+
+  
+  <script>
+      
+      AOS.init(duration= "1200");
+  </script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
