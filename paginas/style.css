@@ -201,11 +201,10 @@ footer #subida img{
     text-align: center;
     margin: 10% 0 3% 0;
     font-family: 'Henny Penny', cursive;
-    grid-area: h2;
 }
 
 #ordenDatos{
-    align-items:stretch;
+    align-items: stretch;
 }
 
 .dato{
@@ -319,11 +318,11 @@ footer #subida img{
 
 @media screen and (max-width: 900px){
     .listas ul li{
-        font-size: 2.5vw;
+        font-size: 2vw;
     }
 
     .listas ul li img {
-        height: 30vw;
+        height: 18vw;
         
     }
     #series{
@@ -337,12 +336,13 @@ footer #subida img{
         font-size: 3vw;
     }
     .listas ul li img {
-        height: 35vw;
+        height: 28vw;
     }
     #series{
         font-size: 9vw;
     }
 }
+
 
 .listas ul ul:nth-child(1){
     grid-area: uno;
@@ -525,7 +525,6 @@ footer #subida img{
     
 }
 
-
 .personajes{
     padding: 20% 0;
 }
@@ -539,6 +538,17 @@ footer #subida img{
 
 }
 
+.listas .listaPersonajes{
+    margin-top: 8%;
+}
+
+.listas .listaPersonajes div div li {
+    margin: 3%;
+}
+
+.listas ul {
+    padding: 0;
+}
 @media screen and (max-width: 900px){
     .fondoLibros{
         background-image: url("../imagenes/librosTablet.jpg");
@@ -599,36 +609,6 @@ footer #subida img{
     }
 }
 
-.listas .listaPersonajes{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 20% 5%;
-    grid-template-areas:
-    "uno dos tres cuatro"
-    "cinco seis siete ocho"
-    "nueve diez once doce";
-    margin: 10%;
-    
-}
-
-@media screen and (max-width: 800px){
-    .listas .listaPersonajes{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        gap: 5% 5%; 
-        grid-template-areas:
-        "uno dos"
-        "tres cuatro"
-        "cinco seis"
-        "siete ocho"
-        "nueve diez"
-        "once doce";
-        margin: 10%;
-    }
-    
-}
 
 
 
