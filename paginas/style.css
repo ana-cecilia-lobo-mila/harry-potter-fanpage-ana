@@ -1,7 +1,8 @@
 /*
 Próximos arreglos:
 
-- Hover de footer
+- Cards de bootstrap, con transición
+
 */
 
 * {
@@ -107,6 +108,11 @@ footer a{
 footer a img{
     height: 2vw;
     margin: 1%;
+}
+
+footer a img:hover{
+    transform: scale(1.3,1.3);
+    transition: ease 0.3s;
 }
 
 footer #subida {
@@ -292,6 +298,9 @@ footer #subida img{
 
 /*Libros, peliculas y personajes*/
 
+.listas ul {
+    padding: 0;
+}
 
 .listas ul li{
     color: wheat;
@@ -331,7 +340,7 @@ footer #subida img{
 
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 650px){
     .listas ul li{
         font-size: 3vw;
     }
@@ -344,124 +353,23 @@ footer #subida img{
 }
 
 
-.listas ul ul:nth-child(1){
-    grid-area: uno;
+
+.listas .seriePrincipal, .listas .serieAF, .listas .serieHogwarts, .listas .listaPersonajes{
+    margin: 8%;
 }
 
-.listas ul ul:nth-child(2){
-    grid-area: dos;
+.listas .seriePrincipal li, .listas .serieAF li, .listas .serieHogwarts li, .listas .listaPersonajes li{
+    margin: 3%;
 }
 
-.listas ul ul:nth-child(3){
-    grid-area: tre;
-}
-
-.listas ul ul:nth-child(4){
-    grid-area: cuatro;
-}
-
-.listas ul ul:nth-child(5){
-    grid-area: cinco;
-}
-
-.listas ul ul:nth-child(6){
-    grid-area: seis;
-}
-
-.listas ul ul:nth-child(7){
-    grid-area: siete;
-}
-
-.listas ul ul:nth-child(8){
-    grid-area: ocho;
-}
-
-.listas ul ul:nth-child(9){
-    grid-area: nueve;
-}
-.listas ul ul:nth-child(10){
-    grid-area: diez;
-}
-.listas ul ul:nth-child(11){
-    grid-area: once;
-}
-.listas ul ul:nth-child(12){
-    grid-area: doce;
-}
-
-.listas .seriePrincipal{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 20% 5%; 
-    grid-template-areas:
-    "uno dos tres cuatro"
-    "cinco seis siete ocho";
-    margin: 10%;
-    
-}
 
 @media screen and (max-width: 800px){
-    .listas .seriePrincipal{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        gap: 5% 5%; 
-        grid-template-areas:
-        "uno dos"
-        "tres cuatro"
-        "cinco seis"
-        "siete ocho";
-        margin: 10%;
-    }
+    
     .listas ul li img {
         padding-top: 20%;
     }
     
 }
-
-
-
-.listas .serieAF{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 20% 5%;
-    grid-template-areas:
-    "uno dos tres";
-    margin: 10%;
-    
-}
-
-.listas .serieHogwarts{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 20% 5%;
-    grid-template-areas:
-    "uno dos tres";
-    margin: 10%;
-    
-}
-
-@media screen and (max-width: 500px){
-    .listas .serieAF, .listas .serieHogwarts{
-        display: grid;
-        grid-template-columns: 1fr ;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        gap: 12% 5%; 
-        grid-template-areas:
-        "uno"
-        "dos"
-        "tres";
-        margin: 10%;
-       
-}
-}
-
-
-
-
 
 
 
@@ -522,7 +430,6 @@ footer #subida img{
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
-    
 }
 
 .personajes{
@@ -538,17 +445,6 @@ footer #subida img{
 
 }
 
-.listas .listaPersonajes{
-    margin-top: 8%;
-}
-
-.listas .listaPersonajes div div li {
-    margin: 3%;
-}
-
-.listas ul {
-    padding: 0;
-}
 @media screen and (max-width: 900px){
     .fondoLibros{
         background-image: url("../imagenes/librosTablet.jpg");
