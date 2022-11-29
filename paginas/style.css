@@ -1,6 +1,7 @@
 /*
 Próximos arreglos:
 
+- responsive de los bootstrap
 
 */
 
@@ -315,6 +316,9 @@ footer #subida img{
 
 
 /*Libros y peliculas */
+.listas{
+    margin: 0 5%;
+}
 
 #cardBox {
     color: wheat;
@@ -338,7 +342,7 @@ footer #subida img{
     list-style: none;
     text-align: center;
     cursor: default;
-    height: 37vw;
+    height: 35vw;
     width: 100%;
     transform-style: preserve-3d;
     transition: transform 0.4s ease 0s;
@@ -372,7 +376,7 @@ footer #subida img{
 
 .card img{
     height: 20vw;
-    padding-top: 7%;
+    padding-top: 25%;
     display: block;
     margin: auto;
   }
@@ -471,11 +475,13 @@ footer #subida img{
   }
   
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 765px){
 
-    .card img {
-        height: 18vw;
-        
+    .card p{
+        font-size: 2vw;
+    }
+    .card img{
+        height: 30vw;
     }
     #series{
         font-size: 6vw;
@@ -484,8 +490,14 @@ footer #subida img{
 }
 
 @media screen and (max-width: 650px){
+    .card{
+        height: 65vw;
+    }
     .card img{
-        height: 28vw;
+        height: 40vw;
+    }
+    .card p{
+        font-size: 3vw;
     }
     #series{
         font-size: 9vw;
@@ -735,13 +747,14 @@ footer #subida img{
 .jk ul{
     color: wheat;
     font-size: 1.5vw;
-    list-style:square;
+    list-style: none;
+    padding: 0;
 }
 
 .jk ul li{
-    margin: 2% 15%;
+    margin: 7% 3%;
     line-height: 200%;
-    text-align: center;
+    text-align: justify;
 }
 
 @media screen and (max-width: 900px){
