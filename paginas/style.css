@@ -1,7 +1,7 @@
 /*
 Próximos arreglos:
 
-- Cards de bootstrap, con transición RESPONSIVE
+- Arreglar nesting
 
 */
 
@@ -327,11 +327,11 @@ footer #subida img{
   }
 
   
-  #cardBox:hover .card{
+#cardBox:hover .card{
     transform: rotateY( 180deg);
   }
   
-  .card {
+.card {
     background-color: unset;
     color: wheat;
     font-size: 1.5vw;
@@ -347,13 +347,13 @@ footer #subida img{
     animation: giro 1s 1;
   }
 
-  .card h3{
+.card h3{
     font-size: 1.5vw;
     line-height: 150%;
     margin-top: 7%;
   }
 
-  .card p {
+.card p {
     text-align: justify;
     font-size: 1.3vw;
     line-height: 120%;
@@ -366,20 +366,19 @@ footer #subida img{
     border-top-right-radius: 7px;
   }
 
-  .card .imagen{
+.card .imagen{
     display: flex;
     align-content: center;
   }
 
-  .card img{
+.card img{
     height: 20vw;
     padding-top: 7%;
     display: block;
     margin: auto;
   }
   
-  .card .front,
-  .card .back {
+.card .front, .card .back {
     backface-visibility: hidden;
     box-sizing: border-box;
     color: wheat;
@@ -394,11 +393,11 @@ footer #subida img{
   }
   
  
-  .card .back {
+.card .back {
     transform: rotateY( 180deg);
   }
   
-  .card .back a {
+.card .back a {
     font-family: 'Henny Penny', cursive;
     padding: 3%;
     color: wheat;
@@ -408,56 +407,53 @@ footer #subida img{
     transition: all 0.2s ease 0s;
   }
   
-  .card .back a:hover {
+.card .back a:hover {
     background: wheat;
     color: #040d18;
-
   }
   
-  #cardBox .card .back {
+#cardBox .card .back {
     background-color: #081521;
-
   }
   
 
-  
-  #cardBox:nth-child(2) .card {
+#cardBox:nth-child(2) .card {
     -webkit-animation: giro 1.5s 1;
     animation: giro 2s 1;
   }
   
-  #cardBox:nth-child(3) .card {
+#cardBox:nth-child(3) .card {
     -webkit-animation: giro 2s 1;
     animation: giro 2s 1;
   }
   
-  #cardBox:nth-child(4) .card {
+#cardBox:nth-child(4) .card {
     -webkit-animation: giro 2.5s 1;
     animation: giro 2s 1;
   }
 
-  #cardBox:nth-child(5) .card {
+#cardBox:nth-child(5) .card {
     -webkit-animation: giro 2.5s 1;
     animation: giro 2s 1;
   }
   
-  #cardBox:nth-child(6) .card {
+#cardBox:nth-child(6) .card {
     -webkit-animation: giro 2.5s 1;
     animation: giro 2s 1;
   }
 
-  #cardBox:nth-child(7) .card {
+#cardBox:nth-child(7) .card {
     -webkit-animation: giro 2.5s 1;
     animation: giro 2s 1;
   }
 
-  #cardBox:nth-child(8) .card {
+#cardBox:nth-child(8) .card {
     -webkit-animation: giro 2.5s 1;
     animation: giro 2s 1;
   }
 
   
-  @-webkit-keyframes giro {
+@-webkit-keyframes giro {
     from {
       transform: rotateY( 180deg);
     }
@@ -466,7 +462,7 @@ footer #subida img{
     }
   }
   
-  @keyframes giro {
+@keyframes giro {
     from {
       transform: rotateY( 180deg);
     }
@@ -476,7 +472,7 @@ footer #subida img{
   }
   
 
-  @media screen and (max-width: 900px){
+@media screen and (max-width: 900px){
 
     .card img {
         height: 18vw;
