@@ -476,7 +476,12 @@ footer #subida img{
   
 
 @media screen and (max-width: 765px){
-
+    .card .back a {
+        font-size: 2vw;
+    }
+    .card h3{
+        font-size: 2vw;
+    }
     .card p{
         font-size: 2vw;
     }
@@ -490,6 +495,12 @@ footer #subida img{
 }
 
 @media screen and (max-width: 650px){
+    .card .back a {
+        font-size: 3vw;
+    }
+    .card h3{
+        font-size: 3vw;
+    }
     .card{
         height: 65vw;
     }
@@ -741,7 +752,7 @@ footer #subida img{
     margin: 5% 10% ;
     color: wheat;
     line-height: 200%;
-    text-align: center;
+    text-align: justify;
 }
 
 .jk ul{
