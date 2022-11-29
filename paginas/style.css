@@ -1,7 +1,6 @@
 /*
 Próximos arreglos:
 
-- Arreglar nesting
 
 */
 
@@ -323,7 +322,7 @@ footer #subida img{
     font-family: 'Henny Penny', cursive;
     perspective: 800px;
     transition: all 0.3s ease 0s;
-    margin-bottom: 5%;
+    margin-bottom: 7%;
   }
 
   
@@ -339,7 +338,7 @@ footer #subida img{
     list-style: none;
     text-align: center;
     cursor: default;
-    height: 30vw;
+    height: 37vw;
     width: 100%;
     transform-style: preserve-3d;
     transition: transform 0.4s ease 0s;
