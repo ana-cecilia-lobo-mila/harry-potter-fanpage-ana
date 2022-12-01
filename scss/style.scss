@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #040d18;
+    background-image: url("../imagenes/fondoEstrellas.png");
+    background-position: center center;
+    background-size: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+@import './base/var';
+@import './base/list';
+@import'./componentes/navfooter.scss';
+@import'./componentes/libros.scss';
+@import './componentes/mediaq.scss';

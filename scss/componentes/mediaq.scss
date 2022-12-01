@@ -1,0 +1,116 @@
+@media screen and (max-width: 900px){
+    
+    nav{
+        padding: 5% 0;
+        ul{
+            li{
+                a{
+                    font-size: nth($fz , 3);
+                }
+            }
+        }
+    }
+    
+    footer{
+        padding: 4% 0 8% 0;
+        h6{
+            font-size: 3vw;
+        }
+        a{
+            font-size: nth($fz , 3);
+            img{
+                height: 4vw;
+                margin: 2%;
+            }
+        }
+    }
+    .fondoLibros{
+        background-image: url("../imagenes/librosTablet.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .card .back a {
+        font-size: 2vw;
+    }
+    .card h3{
+        font-size: 2vw;
+    }
+    .card p{
+        font-size: 2vw;
+    }
+    .card img{
+        height: 30vw;
+    }
+    #series{
+        font-size: 6vw;
+    }
+}
+
+
+
+
+@media screen and (max-width: 600px){
+    nav{
+        padding: 7% 0;
+        ul{
+            li{
+                a{
+                    font-size: nth($fz , 4);
+                    color: red;
+                }
+            }
+        }
+    }
+    footer{
+        padding: 15% 0 20% 0;
+        margin-top: 20%;
+        h6{
+            font-size: nth($fz , 4);
+        }
+        a{
+            font-size: nth($fz , 4);
+            img{
+                height: 5.5vw;
+                margin: 3%;
+            }
+        }
+    }
+    .fondoLibros{
+        background-image: url("../imagenes/librosCelular.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .card .back a {
+        font-size: 3vw;
+    }
+    .card h3{
+        font-size: 3vw;
+    }
+    .card{
+        height: 65vw;
+    }
+    .card img{
+        height: 40vw;
+    }
+    .card p{
+        font-size: 3vw;
+    }
+    #series{
+        font-size: 9vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
