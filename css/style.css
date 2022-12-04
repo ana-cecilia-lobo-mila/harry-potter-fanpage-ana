@@ -101,6 +101,27 @@ footer #subida img {
   margin: auto;
 }
 
+@media screen and (max-width: 900px) {
+  header nav {
+    padding: 5% 0;
+  }
+  header nav ul li a {
+    font-size: 2.5vw;
+  }
+  footer {
+    padding: 4% 0 8% 0;
+  }
+  footer h6 {
+    font-size: 3vw;
+  }
+  footer a {
+    font-size: 2.5vw;
+  }
+  footer a img {
+    height: 4vw;
+    margin: 2%;
+  }
+}
 @media screen and (max-width: 600px) {
   header nav {
     padding: 7% 0;
@@ -121,27 +142,6 @@ footer #subida img {
   footer a img {
     height: 5.5vw;
     margin: 3%;
-  }
-}
-@media screen and (max-width: 900px) {
-  header nav {
-    padding: 5% 0;
-  }
-  header nav ul li a {
-    font-size: 2.5vw;
-  }
-  footer {
-    padding: 4% 0 8% 0;
-  }
-  footer h6 {
-    font-size: 3vw;
-  }
-  footer a {
-    font-size: 2.5vw;
-  }
-  footer a img {
-    height: 4vw;
-    margin: 2%;
   }
 }
 .listas {
@@ -290,29 +290,6 @@ footer #subida img {
   padding: 10% 0 30% 0;
 }
 
-@media screen and (max-width: 600px) {
-  .fondoLibros {
-    background-image: url("../imagenes/librosCelular.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
-  .listas #series {
-    font-size: 9vw;
-  }
-  .listas #cardBox .card .back a {
-    font-size: 3vw;
-  }
-  .listas #cardBox .card h3 {
-    font-size: 3vw;
-  }
-  .listas #cardBox .card img {
-    height: 40vw;
-  }
-  .listas #cardBox .card p {
-    font-size: 3vw;
-  }
-}
 @media screen and (max-width: 900px) {
   .fondoLibros {
     background-image: url("../imagenes/librosTablet.jpg");
@@ -337,6 +314,78 @@ footer #subida img {
   }
   .listas #cardBox .card p {
     font-size: 2vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .fondoLibros {
+    background-image: url("../imagenes/librosCelular.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .listas #series {
+    font-size: 9vw;
+  }
+  .listas #cardBox .card .back a {
+    font-size: 3vw;
+  }
+  .listas #cardBox .card h3 {
+    font-size: 3vw;
+  }
+  .listas #cardBox .card img {
+    height: 40vw;
+  }
+  .listas #cardBox .card p {
+    font-size: 3vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .fondoLibros {
+    background-image: url("../imagenes/librosCelular.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .listas #series {
+    font-size: 9vw;
+  }
+  .listas #cardBox .card .back a {
+    font-size: 3vw;
+  }
+  .listas #cardBox .card h3 {
+    font-size: 3vw;
+  }
+  .listas #cardBox .card img {
+    height: 40vw;
+  }
+  .listas #cardBox .card p {
+    font-size: 3vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .fondoLibros {
+    background-image: url("../imagenes/librosCelular.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .listas #series {
+    font-size: 9vw;
+  }
+  .listas #cardBox .card {
+    height: 65vw;
+  }
+  .listas #cardBox .card .back a {
+    font-size: 3vw;
+  }
+  .listas #cardBox .card h3 {
+    font-size: 3vw;
+  }
+  .listas #cardBox .card img {
+    height: 40vw;
+  }
+  .listas #cardBox .card p {
+    font-size: 3vw;
   }
 }
 

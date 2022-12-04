@@ -166,38 +166,7 @@
 }
 
 
-@media screen and (max-width: 600px) {
-    .fondoLibros {
-      background-image: url("../imagenes/librosCelular.jpg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 100%;
-    }
-    .listas{
-        #series{
-            font-size: 9vw;
-        }
-         #cardBox{
-            .card {
-                .back {
-                    a {
-                        font-size: 3vw;
-                    }
-                }
-                h3 {
-                    font-size: 3vw;
-                }
-                img {
-                    height: 40vw;
-                }
-                p {
-                    font-size: 3vw;
-                }
-            }
-        }
-    }
-  }
-  
+
   @media screen and (max-width: 900px) {
       .fondoLibros {
           background-image: url("../imagenes/librosTablet.jpg");
@@ -231,4 +200,100 @@
                 }
             }
         }
-    } 
+    }
+@media screen and (max-width: 600px) {
+    .fondoLibros {
+      background-image: url("../imagenes/librosCelular.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+    .listas{
+        #series{
+            font-size: 9vw;
+        }
+         #cardBox{
+            .card {
+                .back {
+                    a {
+                        font-size: 3vw;
+                    }
+                }
+                h3 {
+                    font-size: 3vw;
+                }
+                img {
+                    height: 40vw;
+                }
+                p {
+                    font-size: 3vw;
+                }
+            }
+        }
+    }
+  }
+@media screen and (max-width: 600px) {
+    .fondoLibros {
+      background-image: url("../imagenes/librosCelular.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+    .listas{
+        #series{
+            font-size: 9vw;
+        }
+         #cardBox{
+            .card {
+                .back {
+                    a {
+                        font-size: 3vw;
+                    }
+                }
+                h3 {
+                    font-size: 3vw;
+                }
+                img {
+                    height: 40vw;
+                }
+                p {
+                    font-size: 3vw;
+                }
+            }
+        }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .fondoLibros {
+      background-image: url("../imagenes/librosCelular.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+    .listas{
+        #series{
+            font-size: 9vw;
+        }
+         #cardBox{
+            .card {
+                height: 65vw;
+                .back {
+                    a {
+                        font-size: 3vw;
+                    }
+                }
+                h3 {
+                    font-size: 3vw;
+                }
+                img {
+                    height: 40vw;
+                }
+                p {
+                    font-size: 3vw;
+                }
+            }
+        }
+    }
+  }
+  

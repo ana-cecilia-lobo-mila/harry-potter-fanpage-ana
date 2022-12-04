@@ -89,7 +89,35 @@ footer{
     }
 }
 
-@media screen and (max-width: 600px) {
+
+  @media screen and (max-width: 900px) {
+    header{
+        nav {
+            padding: 5% 0;
+            ul {
+                li {
+                    a {
+                        font-size: 2.5vw;
+                    }
+                }   
+            }
+        }
+    }
+    footer {
+      padding: 4% 0 8% 0;
+    }
+    footer h6 {
+      font-size: 3vw;
+    }
+    footer a {
+      font-size: 2.5vw;
+    }
+    footer a img {
+      height: 4vw;
+      margin: 2%;
+    }
+  }
+  @media screen and (max-width: 600px) {
     header{
         nav {
             padding: 7% 0;
@@ -117,31 +145,4 @@ footer{
       margin: 3%;
     }
     
-  }
-  @media screen and (max-width: 900px) {
-    header{
-        nav {
-            padding: 5% 0;
-            ul {
-                li {
-                    a {
-                        font-size: 2.5vw;
-                    }
-                }   
-            }
-        }
-    }
-    footer {
-      padding: 4% 0 8% 0;
-    }
-    footer h6 {
-      font-size: 3vw;
-    }
-    footer a {
-      font-size: 2.5vw;
-    }
-    footer a img {
-      height: 4vw;
-      margin: 2%;
-    }
   }
