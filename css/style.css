@@ -101,6 +101,49 @@ footer #subida img {
   margin: auto;
 }
 
+@media screen and (max-width: 600px) {
+  header nav {
+    padding: 7% 0;
+  }
+  header nav ul li a {
+    font-size: 3.5vw;
+  }
+  footer {
+    padding: 15% 0 20% 0;
+    margin-top: 20%;
+  }
+  footer h6 {
+    font-size: 3.5vw;
+  }
+  footer a {
+    font-size: 3.5vw;
+  }
+  footer a img {
+    height: 5.5vw;
+    margin: 3%;
+  }
+}
+@media screen and (max-width: 900px) {
+  header nav {
+    padding: 5% 0;
+  }
+  header nav ul li a {
+    font-size: 2.5vw;
+  }
+  footer {
+    padding: 4% 0 8% 0;
+  }
+  footer h6 {
+    font-size: 3vw;
+  }
+  footer a {
+    font-size: 2.5vw;
+  }
+  footer a img {
+    height: 4vw;
+    margin: 2%;
+  }
+}
 .listas {
   margin: 0 5%;
 }
@@ -247,93 +290,53 @@ footer #subida img {
   padding: 10% 0 30% 0;
 }
 
-@media screen and (max-width: 900px) {
-  nav {
-    padding: 5% 0;
-  }
-  nav ul li a {
-    font-size: 2.5vw;
-  }
-  footer {
-    padding: 4% 0 8% 0;
-  }
-  footer h6 {
-    font-size: 3vw;
-  }
-  footer a {
-    font-size: 2.5vw;
-  }
-  footer a img {
-    height: 4vw;
-    margin: 2%;
-  }
-  .fondoLibros {
-    background-image: url("../imagenes/librosTablet.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
-  .card .back a {
-    font-size: 2vw;
-  }
-  .card h3 {
-    font-size: 2vw;
-  }
-  .card p {
-    font-size: 2vw;
-  }
-  .card img {
-    height: 30vw;
-  }
-  #series {
-    font-size: 6vw;
-  }
-}
 @media screen and (max-width: 600px) {
-  nav {
-    padding: 7% 0;
-  }
-  nav ul li a {
-    font-size: 3.5vw;
-    color: red;
-  }
-  footer {
-    padding: 15% 0 20% 0;
-    margin-top: 20%;
-  }
-  footer h6 {
-    font-size: 3.5vw;
-  }
-  footer a {
-    font-size: 3.5vw;
-  }
-  footer a img {
-    height: 5.5vw;
-    margin: 3%;
-  }
   .fondoLibros {
     background-image: url("../imagenes/librosCelular.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
   }
-  .card .back a {
+  .listas #series {
+    font-size: 9vw;
+  }
+  .listas #cardBox .card .back a {
     font-size: 3vw;
   }
-  .card h3 {
+  .listas #cardBox .card h3 {
     font-size: 3vw;
   }
-  .card {
-    height: 65vw;
-  }
-  .card img {
+  .listas #cardBox .card img {
     height: 40vw;
   }
-  .card p {
+  .listas #cardBox .card p {
     font-size: 3vw;
   }
-  #series {
-    font-size: 9vw;
+}
+@media screen and (max-width: 900px) {
+  .fondoLibros {
+    background-image: url("../imagenes/librosTablet.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .listas #series {
+    font-size: 6vw;
+  }
+  .listas #cardBox .card {
+    height: 40vw;
+  }
+  .listas #cardBox .card .back a {
+    font-size: 2vw;
+  }
+  .listas #cardBox .card h3 {
+    font-size: 2vw;
+  }
+  .listas #cardBox .card img {
+    height: 30vw;
+  }
+  .listas #cardBox .card p {
+    font-size: 2vw;
   }
 }
 

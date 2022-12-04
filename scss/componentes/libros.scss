@@ -1,128 +1,129 @@
 .listas{
     margin: 0 5%;
-    #cardBox {
-        color: nth($colores , 1);
-        text-align: center;
-        font-family: $ff-1;
-        perspective: 800px;
-        transition: all 0.3s ease 0s;
-        margin-bottom: 7%;
-        &:hover{
-            .card{
-                transform: rotateY( 180deg);
-            }
-        }
-        .card {
-            background-color: unset;
-            color: nth($colores , 1 );
-            font-size: nth($fz , 1);
-            line-height: 175%;
-            list-style: none;
+        #cardBox {
+            color: nth($colores , 1);
             text-align: center;
-            cursor: default;
-            height: 30vw;
-            width: 100%;
-            transform-style: preserve-3d;
-            transition: transform 0.4s ease 0s;
-            -webkit-animation: giro 1s 1;
-            animation: giro 1s 1;
-            h3{
+            font-family: $ff-1;
+            perspective: 800px;
+            transition: all 0.3s ease 0s;
+            margin-bottom: 7%;
+            &:hover{
+                .card{
+                    transform: rotateY( 180deg);
+                }
+            }
+            .card {
+                background-color: unset;
+                color: nth($colores , 1 );
                 font-size: nth($fz , 1);
-                line-height: 150%;
-                margin-top: 7%;
-            }
-            p {
-                text-align: justify;
-                font-size: 1.3vw;
-                line-height: 120%;
-                padding: 10%;
-                margin-bottom: 15%;
-                color: nth($colores , 2);
-                background-color: nth($colores , 1);
-                font-family: $ff-2;
-                border-top-left-radius: 7px;
-                border-top-right-radius: 7px;
-            }
-            img{
-                height: 20vw;
-                padding-top: 25%;
-                display: block;
-                margin: auto;
-            }
-            .front, .back {
-                backface-visibility: hidden;
-                box-sizing: border-box;
-                color: nth($colores , 1);
-                display: block;
-                font-size: nth($fz , 1);
-                height: 100%;
-                padding: 2%;
-                position: absolute;
+                line-height: 175%;
+                list-style: none;
                 text-align: center;
+                cursor: default;
+                height: 30vw;
                 width: 100%;
-                border-radius: 7px;
-            }
-            .back {
-                transform: rotateY( 180deg);
-                background-color: lighten(#040d18, 2%);
-                a {
-                    font-family: $ff-1;
-                    padding: 3%;
+                transform-style: preserve-3d;
+                transition: transform 0.4s ease 0s;
+                -webkit-animation: giro 1s 1;
+                animation: giro 1s 1;
+                h3{
+                    font-size: nth($fz , 1);
+                    line-height: 150%;
+                    margin-top: 7%;
+                }
+                p {
+                    text-align: justify;
+                    font-size: 1.3vw;
+                    line-height: 120%;
+                    padding: 10%;
+                    margin-bottom: 15%;
+                    color: nth($colores , 2);
+                    background-color: nth($colores , 1);
+                    font-family: $ff-2;
+                    border-top-left-radius: 7px;
+                    border-top-right-radius: 7px;
+                }
+                img{
+                    height: 20vw;
+                    padding-top: 25%;
+                    display: block;
+                    margin: auto;
+                }
+                .front, .back {
+                    backface-visibility: hidden;
+                    box-sizing: border-box;
                     color: nth($colores , 1);
-                    text-decoration: none;
-                    border-radius: 30px;
-                    font-size: nth($fz, 1);
-                    transition: all 0.2s ease 0s;
-                    &:hover {
-                        background: nth($colores , 1);
-                        color: nth($colores , 2);
-                      }
-                  }
-              }
-        }
-        &:nth-child(2) {
-            .card {
-                -webkit-animation: giro 1.5s 1;
-                animation: giro 2s 1;
+                    display: block;
+                    font-size: nth($fz , 1);
+                    height: 100%;
+                    padding: 2%;
+                    position: absolute;
+                    text-align: center;
+                    width: 100%;
+                    border-radius: 7px;
+                }
+                .back {
+                    transform: rotateY( 180deg);
+                    background-color: lighten(#040d18, 2%);
+                    a {
+                        font-family: $ff-1;
+                        padding: 3%;
+                        color: nth($colores , 1);
+                        text-decoration: none;
+                        border-radius: 30px;
+                        font-size: nth($fz, 1);
+                        transition: all 0.2s ease 0s;
+                        &:hover {
+                            background: nth($colores , 1);
+                            color: nth($colores , 2);
+                        }
+                    }
+                }
+            }
+            &:nth-child(2) {
+                .card {
+                    -webkit-animation: giro 1.5s 1;
+                     animation: giro 2s 1;
+                }
+            }
+            &:nth-child(3) {
+                .card {
+                    -webkit-animation: giro 1.5s 1;
+                    animation: giro 2s 1;
+                }
+            }
+            &:nth-child(4) {
+                .card {
+                    -webkit-animation: giro 1.5s 1;
+                    animation: giro 2s 1;
+                }
+            }
+            &:nth-child(5) {
+                .card {
+                    -webkit-animation: giro 1.5s 1;
+                    animation: giro 2s 1;
+                }
+            }
+            &:nth-child(6) {
+                .card {
+                    -webkit-animation: giro 1.5s 1;
+                    animation: giro 2s 1;
+                }
+            }
+            &:nth-child(7) {
+                .card {
+                    -webkit-animation: giro 1.5s 1;
+                    animation: giro 2s 1;
+                }
+            }
+            &:nth-child(8) {
+                .card {
+                    -webkit-animation: giro 1.5s 1;
+                     animation: giro 2s 1;
+                }
             }
         }
-        &:nth-child(3) {
-            .card {
-                -webkit-animation: giro 1.5s 1;
-                animation: giro 2s 1;
-            }
-        }
-        &:nth-child(4) {
-            .card {
-                -webkit-animation: giro 1.5s 1;
-                animation: giro 2s 1;
-            }
-        }
-        &:nth-child(5) {
-            .card {
-                -webkit-animation: giro 1.5s 1;
-                animation: giro 2s 1;
-            }
-        }
-        &:nth-child(6) {
-            .card {
-                -webkit-animation: giro 1.5s 1;
-                animation: giro 2s 1;
-            }
-        }
-        &:nth-child(7) {
-            .card {
-                -webkit-animation: giro 1.5s 1;
-                animation: giro 2s 1;
-            }
-        }
-        &:nth-child(8) {
-            .card {
-                -webkit-animation: giro 1.5s 1;
-                animation: giro 2s 1;
-            }
-        }
-    }
+    
 }
 
 @-webkit-keyframes giro {
@@ -163,3 +164,71 @@
 .libros{
     padding: 10% 0 30% 0;
 }
+
+
+@media screen and (max-width: 600px) {
+    .fondoLibros {
+      background-image: url("../imagenes/librosCelular.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+    .listas{
+        #series{
+            font-size: 9vw;
+        }
+         #cardBox{
+            .card {
+                .back {
+                    a {
+                        font-size: 3vw;
+                    }
+                }
+                h3 {
+                    font-size: 3vw;
+                }
+                img {
+                    height: 40vw;
+                }
+                p {
+                    font-size: 3vw;
+                }
+            }
+        }
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+      .fondoLibros {
+          background-image: url("../imagenes/librosTablet.jpg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 100%;
+        }
+        .listas{
+            #series{
+                font-size: 6vw;
+            }
+            #cardBox{
+                .card {
+                    height: 40vw;
+                    .back {
+                        a {
+                            font-size: 2vw;
+                        }
+                    }
+                    h3 {
+                        font-size: 2vw;
+                        
+                    }
+                    img {
+                        height: 30vw;
+                    }
+                    p {
+                        font-size: 2vw;
+                        
+                    }
+                }
+            }
+        }
+    } 
