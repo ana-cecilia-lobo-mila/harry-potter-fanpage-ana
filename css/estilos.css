@@ -1,7 +1,7 @@
 /*
 Próximos arreglos:
 
-- no funcona el media query de las letras del nv
+- Boton de subida 
 
 
 Comandos git:
@@ -30,38 +30,171 @@ Comandos sass:
     background-size: 100%;
     background-color: #040d18;
 }
-
+.barraInicio {
+    animation-duration: 4s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+        margin-left: 50%;
+        width: 150%
+    }
+  
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+  }
 
 /*Inicio del index*/
 
 .inicio h1 {
-    color: wheat;
+    color: #C7B4A1;
     text-align: center;
     font-size: 9vw;
     font-family: 'Henny Penny', cursive;
-    padding-top: 8%;
+    padding-top: 7%;
     margin-top: 5%;
+    text-shadow: 10px 1px 1px #2c2621;
 }
 
 .inicio h2{
-    color: wheat;
+    color: #C7B4A1;
     margin-left: 55%;
     font-size: 8vw;
     font-family: 'Henny Penny', cursive;
+    text-shadow: 10px 1px 1px #2c2621;
+}
+/*Historia*/
+.historiaHogwarts{
+    margin: 5% 0;
+}
+
+.historiaHogwarts h2{
+    color: #C7B4A1;
+    font-size: 5vw;
+    text-align: center;
+    margin: 3%;
+    font-family: 'Henny Penny', cursive;
+}
+
+.historiaHogwarts h2::before, .historiaHogwarts h2::after {
+    content: "--";
+    height: 3px;
+    color: #827365;
+    font-family: 'Barlow', sans-serif;;
+}
+
+.historiaHogwarts h2::before {
+    margin-right: 2.5rem;
+}
+
+.historiaHogwarts h2::after {
+    margin-left: 2.5rem;
+}
+
+.historiaHogwarts p{
+    color: #C7B4A1;
+    font-size: 1.5vw;
+    text-align: center;
+    margin: 3%;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+#historiaHogwarts img, #historiaHogwarts p{
+    margin: 3% 1%;
+    align-self: center;
+}
+/*Casas*/
+.casasHogwarts{
+    padding: 5% 0;
+    background-image: url("../imagenes/fondoCasasHogwarts.jpg");
+    background-size:auto;
+}
+
+.casasHogwarts img{
+    display: block;
+    margin: 3% 5%;
+
+}
+
+.casasHogwarts img:hover{
+    transform: scale(1.1,1.1);
+    animation: jello-horizontal 0.9s both;
+}
+
+@keyframes jello-horizontal {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+
+
+.casasHogwarts h2{
+    color: #040d18;
+    text-shadow: 5px 1px 1px #827365;
+    font-size: 5vw;
+    text-align: center;
+    margin: 3%;
+    font-family: 'Henny Penny', cursive;
+}
+.casasHogwarts h2::before, .casasHogwarts h2::after {
+    content: "--";
+    height: 3px;
+    color: #827365;
+    font-family: 'Barlow', sans-serif;;
+}
+
+.casasHogwarts h2::before {
+    margin-right: 2.5rem;
+}
+
+.casasHogwarts h2::after {
+    margin-left: 2.5rem;
 }
 
 /*Carrusel index*/
 .carrusel{
     margin: 10% 0;
+    padding: 5% 0; 
+    background-image:url("../imagenes/fondoCarrusel.jpg");
 }
- 
-/*Datos curiosos index*/
 
+
+
+
+
+
+/*Datos curiosos index*/
+.datosCuriosos{
+    margin-bottom: 10%;
+}
 .datosCuriosos h2{
-    color: wheat;
+    color: #C7B4A1;
     font-size: 5vw;
     text-align: center;
-    margin: 10% 0 3% 0;
+    margin: 0 3%;
     font-family: 'Henny Penny', cursive;
 }
 
@@ -76,7 +209,7 @@ Comandos sass:
 
 #ordenDatos p{
     padding: 5%;
-    color: wheat;
+    color: #C7B4A1;
     font-size: 1.5vw;
     margin: 0 5%;
     line-height: 150%;
@@ -107,6 +240,18 @@ Comandos sass:
     .inicio h2{
         font-size: 10vw;
     }
+    .casasHogwarts h2{
+        font-size: 7vw;
+    }
+    .historiaHogwarts h2{
+        font-size: 7vw;
+    }
+    .historiaHogwarts p{
+        font-size: 2.5vw;
+    }
+    .carrusel{
+        margin: 20% 0;
+    }
     .datosCuriosos h2{
         font-size: 7vw;
     
@@ -133,6 +278,18 @@ Comandos sass:
     .inicio h2{
         font-size: 13vw;
     }
+    .casasHogwarts h2{
+        font-size: 10vw;
+    }
+    .historiaHogwarts h2{
+        font-size: 10vw;
+    }
+    .historiaHogwarts p{
+        font-size: 3.5vw;
+    }
+    .carrusel{
+        margin: 20% 0;
+    }
     .datosCuriosos h2{
         font-size: 10vw;
     
@@ -151,12 +308,40 @@ Comandos sass:
 
 /*Personajes*/
 
+
+.listas{
+    padding-top: 5%;
+
+}
+.listas h2{
+    color: #C7B4A1;
+    font-size: 7vw;
+    text-align: center;
+    margin: 0 3%;
+    font-family: 'Henny Penny', cursive;
+}
+
+.listas h2::before, .listas h2::after {
+    content: "--";
+    height: 3px;
+    color: #827365;
+    font-family: 'Barlow', sans-serif;;
+}
+
+.listas h2::before {
+    margin-right: 2.5rem;
+}
+
+.listas h2::after {
+    margin-left: 2.5rem;
+}
+
 .listas ul {
     padding: 0;
 }
 
 .listas ul li{
-    color: wheat;
+    color: #C7B4A1;
     font-size: 1.5vw;
     list-style: none;
     text-align: center;
@@ -173,7 +358,7 @@ Comandos sass:
     display: block;
     font-size: 4vw;
     margin: 10% 0; 
-    color: wheat;
+    color: #C7B4A1;
     text-align: center;
     font-family: 'Henny Penny', cursive;
 }
@@ -190,6 +375,9 @@ Comandos sass:
     #series{
         font-size: 6vw;
     }
+    .listas h2{
+        font-size: 9vw;
+    }
 
 }
 
@@ -202,6 +390,9 @@ Comandos sass:
     }
     #series{
         font-size: 9vw;
+    }
+    .listas h2{
+        font-size: 11vw;
     }
 }
 
@@ -225,35 +416,6 @@ Comandos sass:
 }
 
 
-
-
-
-
- 
-
-/*Peliculas*/
-.fondoPeliculas{
-    background-color: #040d18;
-    background-image: url("../imagenes/fondoPeliculas.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-}
-
-.peliculas{
-    padding: 20% 0;
-}
-
-.fondoPeliculas h2{
-    font-size: 4vw;
-    color: wheat;
-    font-family: 'Henny Penny', cursive;
-    text-align: center;
-    background-color: #040d18;
-
-}
-
-
 /*Personajes*/
 .fondoPersonajes{
     background-color: #040d18;
@@ -269,7 +431,7 @@ Comandos sass:
 
 .fondoPersonajes h2{
     font-size: 4vw;
-    color: wheat;
+    color: #C7B4A1;
     font-family: 'Henny Penny', cursive;
     text-align: center;
     background-color: #040d18;
@@ -277,18 +439,7 @@ Comandos sass:
 }
 
 @media screen and (max-width: 900px){
-    .fondoLibros{
-        background-image: url("../imagenes/librosTablet.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-    .fondoPeliculas{
-        background-image: url("../imagenes/PeliculasTablets.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
+    
     .fondoPersonajes{
         background-image: url("../imagenes/personjesTablet.jpg");
         background-position: center;
@@ -296,10 +447,10 @@ Comandos sass:
         background-size: 100%;
     }
 
-    .libros, .peliculas, .personajes{
+    .personajes{
         padding: 190px 0;
     }
-    .fondoLibros h2, .fondoPeliculas h2, .fondoPersonajes h2{
+    .fondoPersonajes h2{
         font-size: 6vw;
         
         
@@ -308,18 +459,8 @@ Comandos sass:
 }
 
 @media screen and (max-width: 600px){
-    .fondoLibros{
-        background-image: url("../imagenes/librosTablet.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-    .fondoPeliculas{
-        background-image: url("../imagenes/peliculasCelular.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
+    
+    
     .fondoPersonajes{
         background-image: url("../imagenes/PersonajesCelures.jpg");
         background-position: center;
@@ -327,10 +468,10 @@ Comandos sass:
         background-size: 100%;
     }
 
-    .libros, .peliculas, .personajes{
+    .personajes{
         padding: 230px 0;
     }
-    .fondoLibros h2, .fondoPeliculas h2, .fondoPersonajes h2{
+    .fondoPersonajes h2{
         font-size: 9vw;
     
     }
@@ -347,7 +488,7 @@ Comandos sass:
 .jk h2{
     font-size: 4vw;
     margin: 5% 0;
-    color: wheat;
+    color: #C7B4A1;
     text-align: center;
     font-family: 'Henny Penny', cursive;
 }
@@ -360,13 +501,13 @@ Comandos sass:
 .jk p{
     font-size: 1.7vw;
     margin: 5% 10% ;
-    color: wheat;
+    color: #C7B4A1;
     line-height: 200%;
     text-align: justify;
 }
 
 .jk ul{
-    color: wheat;
+    color: #C7B4A1;
     font-size: 1.5vw;
     list-style: none;
     padding: 0;
@@ -410,4 +551,106 @@ Comandos sass:
     .jk ul li{
         font-size: 3vw;
     }
+}
+
+
+
+
+
+/*Tienda*/
+.navEnTienda{
+    margin-top: 3%;
+    background-color: #040d18;
+}
+.tienda{
+    background-color: #C7B4A1;
+}
+.navTienda{
+    display: inline;
+}
+
+
+.navTienda ul{
+    list-style: none;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 2%;
+} 
+
+.navTienda li{
+    color: #040d18;
+    font-size: 1.5vw;
+    margin: 0 3%;
+}
+
+.logo{
+    height: 7vw;
+    
+    
+    
+}
+
+.icon{
+    height: 2vw; 
+}
+
+
+.inicioTienda{
+    background-image: url("../imagenes/fondoTienda.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 20% 0;
+    
+}
+.inicioTienda h2{
+    background-color: #040d18;
+    font-size: 4vw;
+    margin: 5% 0;
+    color: #C7B4A1;
+    text-align: center;
+    font-family: 'Henny Penny', cursive;
+}
+
+.categorias{
+    margin: 5% 0;
+    color: #C7B4A1;
+    text-shadow: 5px 1px 15px #261f1a;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif; 
+}
+.categorias div{
+    margin: 5% 0;
+}
+
+.categorias div div div{
+    font-size: 2.5vw;
+    padding: 10% 0;
+    margin: 0 3%;
+}
+
+.varitas{
+    background-image: url("../imagenes/varitas.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+
+.ropa{
+    background-image: url("../imagenes/ropa.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+
+.dulces{
+    background-image: url("../imagenes/dulces.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
 }

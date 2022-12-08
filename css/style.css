@@ -8,11 +8,12 @@ body {
   background-image: url("../imagenes/fondoEstrellas.png");
   background-position: center center;
   background-size: 100%;
+  background-attachment: fixed;
   font-family: "Times New Roman", Times, serif;
 }
 
 header {
-  padding-bottom: 2%;
+  margin-bottom: 2%;
 }
 header nav {
   padding: 2%;
@@ -37,12 +38,12 @@ header nav ul li:hover {
   transition: ease 0.3s;
 }
 header nav ul li a {
-  color: wheat;
+  color: #C7B4A1;
   text-decoration: none;
   font-size: 1.7vw;
 }
 header nav ul li a:hover {
-  color: wheat;
+  color: #C7B4A1;
 }
 header nav ul li a::after {
   content: "";
@@ -52,7 +53,7 @@ header nav ul li a::after {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: wheat;
+  background-color: #C7B4A1;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -69,7 +70,7 @@ footer {
   text-align: center;
 }
 footer h6 {
-  color: wheat;
+  color: #C7B4A1;
   font-size: 1.7vw;
   display: inline-block;
   margin-bottom: 3%;
@@ -148,7 +149,7 @@ footer #subida img {
   margin: 0 5%;
 }
 .listas #cardBox {
-  color: wheat;
+  color: #C7B4A1;
   text-align: center;
   font-family: "Henny Penny", cursive;
   perspective: 800px;
@@ -160,7 +161,7 @@ footer #subida img {
 }
 .listas #cardBox .card {
   background-color: unset;
-  color: wheat;
+  color: #C7B4A1;
   font-size: 1.5vw;
   line-height: 175%;
   list-style: none;
@@ -185,7 +186,7 @@ footer #subida img {
   padding: 10%;
   margin-bottom: 15%;
   color: #040d18;
-  background-color: wheat;
+  background-color: #C7B4A1;
   font-family: "Times New Roman", Times, serif;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
@@ -199,7 +200,7 @@ footer #subida img {
 .listas #cardBox .card .front, .listas #cardBox .card .back {
   backface-visibility: hidden;
   box-sizing: border-box;
-  color: wheat;
+  color: #C7B4A1;
   display: block;
   font-size: 1.5vw;
   height: 100%;
@@ -216,14 +217,14 @@ footer #subida img {
 .listas #cardBox .card .back a {
   font-family: "Henny Penny", cursive;
   padding: 3%;
-  color: wheat;
+  color: #C7B4A1;
   text-decoration: none;
   border-radius: 30px;
   font-size: 1.5vw;
   transition: all 0.2s ease 0s;
 }
 .listas #cardBox .card .back a:hover {
-  background: wheat;
+  background: #C7B4A1;
   color: #040d18;
 }
 .listas #cardBox:nth-child(2) .card {
@@ -280,7 +281,7 @@ footer #subida img {
 }
 .fondoLibros h2 {
   font-size: 4vw;
-  color: wheat;
+  color: #C7B4A1;
   font-family: "Henny Penny", cursive;
   text-align: center;
   background-color: #040d18;
@@ -291,11 +292,17 @@ footer #subida img {
 }
 
 @media screen and (max-width: 900px) {
+  .libros {
+    padding: 190px 0;
+  }
   .fondoLibros {
     background-image: url("../imagenes/librosTablet.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
+  }
+  .fondoLibros h2 {
+    font-size: 6vw;
   }
   .listas #series {
     font-size: 6vw;
@@ -317,63 +324,23 @@ footer #subida img {
   }
 }
 @media screen and (max-width: 600px) {
+  .libros {
+    padding: 230px 0;
+  }
   .fondoLibros {
     background-image: url("../imagenes/librosCelular.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
   }
-  .listas #series {
+  .fondoLibros h2 {
     font-size: 9vw;
-  }
-  .listas #cardBox .card .back a {
-    font-size: 3vw;
-  }
-  .listas #cardBox .card h3 {
-    font-size: 3vw;
-  }
-  .listas #cardBox .card img {
-    height: 40vw;
-  }
-  .listas #cardBox .card p {
-    font-size: 3vw;
-  }
-}
-@media screen and (max-width: 600px) {
-  .fondoLibros {
-    background-image: url("../imagenes/librosCelular.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
-  .listas #series {
-    font-size: 9vw;
-  }
-  .listas #cardBox .card .back a {
-    font-size: 3vw;
-  }
-  .listas #cardBox .card h3 {
-    font-size: 3vw;
-  }
-  .listas #cardBox .card img {
-    height: 40vw;
-  }
-  .listas #cardBox .card p {
-    font-size: 3vw;
-  }
-}
-@media screen and (max-width: 600px) {
-  .fondoLibros {
-    background-image: url("../imagenes/librosCelular.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
   }
   .listas #series {
     font-size: 9vw;
   }
   .listas #cardBox .card {
-    height: 65vw;
+    height: 70vw;
   }
   .listas #cardBox .card .back a {
     font-size: 3vw;
