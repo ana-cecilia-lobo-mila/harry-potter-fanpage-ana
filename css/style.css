@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -12,8 +13,16 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 
+.listas .listaPersonajes, .listas .serieHogwarts, .listas .serieAF, .listas .seriePrincipal {
+  margin: 8%;
+}
+
+.listas .listaPersonajes li, .listas .serieHogwarts li, .listas .serieAF li, .listas .seriePrincipal li {
+  margin: 3%;
+}
+
 header {
-  margin-bottom: 2%;
+  padding-bottom: 2%;
 }
 header nav {
   padding: 2%;
@@ -145,6 +154,345 @@ footer #subida img {
     margin: 3%;
   }
 }
+/*Barra de navegación del index*/
+.barraInicio {
+  background-image: url("../imagenes/fondoInicio.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #040d18;
+  animation-duration: 4s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 50%;
+    width: 150%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+/*Inicio del index*/
+.inicio h1 {
+  color: #C7B4A1;
+  text-align: center;
+  font-size: 9vw;
+  font-family: "Henny Penny", cursive;
+  padding-top: 7%;
+  margin-top: 5%;
+  text-shadow: 10px 1px 1px #2c2621;
+}
+.inicio h2 {
+  color: #C7B4A1;
+  margin-left: 55%;
+  font-size: 8vw;
+  font-family: "Henny Penny", cursive;
+  text-shadow: 10px 1px 1px #2c2621;
+}
+
+/*Casas*/
+.casasHogwarts {
+  background-image: url("../imagenes/fondoCasasHogwarts.jpg");
+  background-size: auto;
+  padding: 5% 0;
+}
+.casasHogwarts h2 {
+  color: #040d18;
+  font-size: 5vw;
+  text-align: center;
+  font-family: "Henny Penny", cursive;
+  margin: 3%;
+  padding: 0;
+  text-shadow: 5px 1px 1px #827365;
+}
+.casasHogwarts h2::before {
+  margin-right: 2.5rem;
+  content: "--";
+  height: 3px;
+  color: #827365;
+  font-family: "Barlow", sans-serif;
+}
+.casasHogwarts h2::after {
+  margin-left: 2.5rem;
+  content: "--";
+  height: 3px;
+  color: #827365;
+  font-family: "Barlow", sans-serif;
+}
+.casasHogwarts img {
+  display: block;
+  margin: 3% 5%;
+}
+.casasHogwarts img:hover {
+  transform: scale(1.1, 1.1);
+  animation: jello-horizontal 0.9s both;
+}
+
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+/*Historia*/
+.historiaHogwarts {
+  margin: 5% 0;
+}
+.historiaHogwarts h2 {
+  color: #C7B4A1;
+  font-size: 5vw;
+  text-align: center;
+  font-family: "Henny Penny", cursive;
+  margin: 3%;
+  padding: 0;
+}
+.historiaHogwarts h2::before {
+  margin-right: 2.5rem;
+  content: "--";
+  height: 3px;
+  color: #827365;
+  font-family: "Barlow", sans-serif;
+}
+.historiaHogwarts h2::after {
+  margin-left: 2.5rem;
+  content: "--";
+  height: 3px;
+  color: #827365;
+  font-family: "Barlow", sans-serif;
+}
+.historiaHogwarts p {
+  color: #C7B4A1;
+  font-size: 1.5vw;
+  font-family: "Times New Roman", Times, serif;
+  text-align: justify;
+  margin: 3% 1%;
+  padding: 0;
+  align-self: center;
+}
+.historiaHogwarts img {
+  margin: 3% 1%;
+  padding: 0;
+  align-self: center;
+}
+
+/*Carrusel*/
+.carrusel {
+  margin: 10% 0;
+  padding: 5% 0;
+  background-image: url("../imagenes/fondoCarrusel.jpg");
+}
+
+/*Datos curiosos index*/
+.datosCuriosos {
+  margin-bottom: 10%;
+}
+.datosCuriosos h2 {
+  color: #C7B4A1;
+  font-size: 5vw;
+  text-align: center;
+  font-family: "Henny Penny", cursive;
+  margin: 3%;
+  padding: 0;
+}
+
+#ordenDatos {
+  align-items: stretch;
+}
+#ordenDatos p {
+  color: #C7B4A1;
+  font-size: 1.5vw;
+  font-family: "Times New Roman", Times, serif;
+  text-align: justify;
+  margin: 0 5%;
+  padding: 5%;
+  line-height: 150%;
+}
+#ordenDatos img {
+  display: block;
+  height: 15vw;
+  margin: 5% auto;
+  padding: 0;
+}
+#ordenDatos .dato {
+  background-color: #081521;
+  margin: 3%;
+  padding: 0;
+}
+
+/*Media queries*/
+@media screen and (max-width: 900px) {
+  .barraInicio {
+    background-image: url("../imagenes/castilloTablet.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #040d18;
+  }
+  .inicio {
+    padding: 125px 0;
+  }
+  .inicio h1 {
+    font-size: 11vw;
+  }
+  .inicio h2 {
+    font-size: 10vw;
+  }
+  .casasHogwarts h2 {
+    font-size: 7vw;
+  }
+  .historiaHogwarts h2 {
+    font-size: 7vw;
+  }
+  .historiaHogwarts p {
+    font-size: 2.5vw;
+  }
+  .carrusel {
+    margin: 20% 0;
+  }
+  .datosCuriosos h2 {
+    font-size: 7vw;
+  }
+  #ordenDatos p {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .barraInicio {
+    background-image: url("../imagenes/castilloCelular.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #040d18;
+  }
+  .inicio {
+    padding-bottom: 160px 0;
+  }
+  .inicio h1 {
+    font-size: 14vw;
+  }
+  .inicio h2 {
+    font-size: 13vw;
+  }
+  .casasHogwarts h2 {
+    font-size: 10vw;
+  }
+  .historiaHogwarts h2 {
+    font-size: 10vw;
+  }
+  .historiaHogwarts p {
+    font-size: 3.5vw;
+  }
+  .carrusel {
+    margin: 20% 0;
+  }
+  .datosCuriosos h2 {
+    font-size: 10vw;
+  }
+  #ordenDatos p {
+    font-size: 3.5vw;
+  }
+  #ordenDatos img {
+    height: 35vw;
+  }
+}
+/*lpp*/
+.listas {
+  padding-top: 5%;
+}
+.listas h2 {
+  color: #C7B4A1;
+  font-size: 5vw;
+  text-align: center;
+  font-family: "Henny Penny", cursive;
+  margin: 3% 0;
+  padding: 0;
+}
+.listas h2::before {
+  margin-right: 2.5rem;
+  content: "--";
+  height: 3px;
+  color: #827365;
+  font-family: "Barlow", sans-serif;
+}
+.listas h2::after {
+  margin-left: 2.5rem;
+  content: "--";
+  height: 3px;
+  color: #827365;
+  font-family: "Barlow", sans-serif;
+}
+.listas ul {
+  padding: 0;
+}
+.listas ul li {
+  color: #C7B4A1;
+  font-size: 1.5vw;
+  font-family: "Times New Roman", Times, serif;
+  text-align: justify;
+  list-style: none;
+}
+.listas ul li img {
+  height: 15vw;
+  padding: 20% 5% 0 5%;
+  display: block;
+  margin: auto;
+}
+.listas #series {
+  font-size: 5vw;
+  color: #C7B4A1;
+  text-align: center;
+  font-family: "Henny Penny", cursive;
+  display: block;
+  margin: 10% 0;
+}
+@media screen and (max-width: 900px) {
+  .listas ul li {
+    font-size: 2vw;
+  }
+  .listas ul li img {
+    height: 18vw;
+  }
+  .listas #series {
+    font-size: 6vw;
+  }
+  .listas h2 {
+    font-size: 9vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .listas ul li {
+    font-size: 3w;
+  }
+  .listas ul li img {
+    height: 28vw;
+  }
+  .listas #series {
+    font-size: 9vw;
+  }
+  .listas h2 {
+    font-size: 11vw;
+  }
+}
 .listas {
   margin: 0 5%;
 }
@@ -273,17 +621,19 @@ footer #subida img {
   }
 }
 .fondoLibros {
-  background-color: #040d18;
   background-image: url("../imagenes/fondoLibros.jpg");
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: 100%;
+  background-color: #040d18;
 }
 .fondoLibros h2 {
-  font-size: 4vw;
   color: #C7B4A1;
-  font-family: "Henny Penny", cursive;
+  font-size: 5vw;
   text-align: center;
+  font-family: "Henny Penny", cursive;
+  margin: 3% 0;
+  padding: 0;
   background-color: #040d18;
 }
 
@@ -352,6 +702,118 @@ footer #subida img {
     height: 40vw;
   }
   .listas #cardBox .card p {
+    font-size: 3vw;
+  }
+}
+.fondoPersonajes {
+  background-image: url("../imagenes/fondoPersonajes.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #040d18;
+}
+.fondoPersonajes h2 {
+  color: #C7B4A1;
+  font-size: 5vw;
+  text-align: center;
+  font-family: "Henny Penny", cursive;
+  margin: 3% 0;
+  padding: 0;
+  background-color: #040d18;
+}
+
+.personajes {
+  padding: 20% 0;
+}
+
+@media screen and (max-width: 900px) {
+  .fondoPersonajes {
+    background-image: url("../imagenes/personjesTablet.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .fondoPersonajes h2 {
+    font-size: 6vw;
+  }
+  .personajes {
+    padding: 190px 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .fondoPersonajes {
+    background-image: url("../imagenes/PersonajesCelures.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .fondoPersonajes h2 {
+    font-size: 9vw;
+  }
+  .personajes {
+    padding: 230px 0;
+  }
+}
+.jk h2 {
+  color: #C7B4A1;
+  font-size: 5vw;
+  text-align: center;
+  font-family: "Henny Penny", cursive;
+  margin: 3%;
+  padding: 0;
+}
+.jk img {
+  display: block;
+  height: 50vw;
+  margin: 0 auto;
+}
+.jk p {
+  color: #C7B4A1;
+  font-size: 1.5vw;
+  font-family: "Times New Roman", Times, serif;
+  text-align: justify;
+  margin: 5% 10%;
+  line-height: 200%;
+}
+.jk ul {
+  color: #C7B4A1;
+  font-size: 1.5vw;
+  font-family: "Times New Roman", Times, serif;
+  text-align: justify;
+  list-style: none;
+  padding: 0;
+}
+.jk ul li {
+  margin: 7% 3%;
+  line-height: 200%;
+  text-align: justify;
+}
+
+@media screen and (max-width: 900px) {
+  .jk h2 {
+    font-size: 6vw;
+  }
+  .jk img {
+    height: 70vw;
+  }
+  .jk p {
+    font-size: 2.5vw;
+  }
+  .jk ul li {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .jk h2 {
+    font-size: 9vw;
+  }
+  .jk img {
+    height: 90vw;
+  }
+  .jk p {
+    font-size: 3vw;
+  }
+  .jk ul li {
     font-size: 3vw;
   }
 }

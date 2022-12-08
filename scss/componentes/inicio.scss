@@ -1,0 +1,244 @@
+/*Barra de navegación del index*/
+.barraInicio{
+    background-image: url("../imagenes/fondoInicio.jpg");
+    @include background-general;
+    animation-duration: 4s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 50%;
+        width: 150%
+    }
+  
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+  }
+
+/*Inicio del index*/
+.inicio{
+    h1{
+        color: nth($colores ,1);
+        text-align: center;
+        font-size: 9vw;
+        font-family: $ff-1;
+        padding-top: 7%;
+        margin-top: 5%;
+        text-shadow: 10px 1px 1px #2c2621;
+    }
+    h2{
+        color: nth($colores ,1);
+        margin-left: 55%;
+        font-size: 8vw;
+        font-family: $ff-1;
+        text-shadow: 10px 1px 1px #2c2621;
+    }
+}
+
+/*Casas*/
+.casasHogwarts{
+    background-image: url("../imagenes/fondoCasasHogwarts.jpg");
+    background-size:auto;
+    padding: 5% 0;
+    h2{
+        @include titulos-f2;
+        @include tamano(3%, 0);
+        text-shadow: 5px 1px 1px #827365;
+        &::before{
+            @include antes;
+        }
+        &::after{
+            @include despues;
+        }
+    }
+    img{
+        display: block;
+        margin: 3% 5%;
+        &:hover{
+            transform: scale(1.1,1.1);
+            animation: jello-horizontal 0.9s both; 
+        }
+    }
+}
+
+@keyframes jello-horizontal {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+/*Historia*/
+.historiaHogwarts{
+    margin: 5% 0;
+    h2{
+        @include titulos-f1;
+        @include tamano(3%, 0);
+        &::before{
+            @include antes;
+        }
+        &::after{
+            @include despues;
+        }
+    }
+    p{
+        @include parrafos;
+        @include tamano(3% 1%, 0);
+        align-self: center;
+    }
+    img{
+        @include tamano(3% 1%, 0);
+        align-self: center; 
+    }
+}
+
+/*Carrusel*/
+
+.carrusel{
+    margin: 10% 0;
+    padding: 5% 0; 
+    background-image:url("../imagenes/fondoCarrusel.jpg");
+}
+
+/*Datos curiosos index*/
+
+.datosCuriosos{
+    margin-bottom: 10%;
+    h2{
+        @include titulos-f1;
+        @include tamano(3%, 0);
+    }
+}
+
+#ordenDatos{
+    align-items: stretch;
+    p{
+        @include parrafos;
+        @include tamano(0 5%, 5%);
+        line-height: 150%;
+    }
+    img{
+        display: block;
+        height: 15vw;
+        @include tamano(5% auto, 0);
+    }
+    .dato{
+        background-color: #081521;
+        @include tamano(3%, 0);
+    }
+}
+
+/*Media queries*/
+
+@media screen and (max-width: 900px){
+    .barraInicio {
+        background-image: url("../imagenes/castilloTablet.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-color:#040d18;
+    }
+    .inicio{
+        padding: 125px 0;
+        h1{
+            font-size: 11vw;
+        }
+        h2{
+            font-size: 10vw;
+        }
+    }
+    .casasHogwarts{
+        h2{
+            font-size: 7vw;
+        }
+    }
+    .historiaHogwarts{
+        h2{
+            font-size: 7vw;
+        }
+        p{
+            font-size: 2.5vw;
+        }
+    }
+    .carrusel{
+        margin: 20% 0;
+    }
+    .datosCuriosos{
+        h2{
+            font-size: 7vw;
+        }
+    }
+    #ordenDatos{ 
+        p{
+        font-size: 2.5vw;
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .barraInicio {
+        background-image: url("../imagenes/castilloCelular.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-color: #040d18;
+    }
+    .inicio{
+        padding-bottom: 160px 0;
+        h1{
+            font-size: 14vw;
+        }
+        h2{
+        font-size: 13vw;
+    }
+    }
+    .casasHogwarts {
+        h2{
+        font-size: 10vw;
+        }
+    }
+    .historiaHogwarts{
+        h2{
+        font-size: 10vw;
+        }
+        p{
+            font-size: 3.5vw;
+        }
+    }
+    .carrusel{
+        margin: 20% 0;
+    }
+    .datosCuriosos {
+        h2{
+        font-size: 10vw;
+        }
+    }
+    #ordenDatos {
+        p{
+        font-size: 3.5vw;
+        }
+        img{
+            height: 35vw;
+        }
+    }
+}

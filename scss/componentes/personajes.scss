@@ -1,0 +1,48 @@
+.fondoPersonajes{
+    background-image: url("../imagenes/fondoPersonajes.jpg");
+    @include background-general;
+    h2{
+        @include titulos-f1;
+        @include tamano(3% 0, 0);
+        background-color: #040d18;
+    }
+}
+
+.personajes{
+    padding: 20% 0;
+}
+
+@media screen and (max-width: 900px){
+    
+    .fondoPersonajes{
+        background-image: url("../imagenes/personjesTablet.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        h2{
+            font-size: 6vw;
+            
+        }
+    }
+    .personajes{
+        padding: 190px 0;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+
+    .fondoPersonajes{
+        background-image: url("../imagenes/PersonajesCelures.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        h2{
+            font-size: 9vw;
+        
+        }
+    }
+    .personajes{
+        padding: 230px 0;
+    }
+}

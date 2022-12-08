@@ -1,0 +1,102 @@
+/*lpp*/
+
+.listas{
+    padding-top: 5%;
+    h2{
+        @include titulos-f1;
+        @include tamano(3% 0, 0);
+        &::before{
+            @include antes;
+        }
+        &::after{
+            @include despues;
+        }
+    }
+    ul {
+        padding: 0;
+        li{
+            @include parrafos;
+            list-style: none;
+            img {
+                height: 15vw;
+                padding: 20% 5% 0 5%;
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+    #series{
+        font-size: 5vw;
+        color: #C7B4A1;
+        text-align: center; 
+        font-family: $ff-1;
+        display: block;
+        margin: 10% 0;
+    }
+    .seriePrincipal{
+        @extend %margen-listas;
+        li{
+            @extend %margen-listas-li;
+        }
+    }
+    .serieAF{
+        @extend %margen-listas;
+        li{
+            @extend %margen-listas-li;
+        }
+    }
+    .serieHogwarts{
+        @extend %margen-listas;
+        li{
+            @extend %margen-listas-li;
+        }
+    }
+    .listaPersonajes{
+        @extend %margen-listas;
+        li{
+            @extend %margen-listas-li;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 900px){
+    .listas {
+        ul {
+            li{
+                font-size: 2vw;
+                img {
+                    height: 18vw;
+                    
+                }
+            }
+        }
+        #series{
+            font-size: 6vw;
+        }
+        h2{
+            font-size: 9vw;
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .listas {
+        ul {
+            li{
+                font-size: 3w;
+                img {
+                    height: 28vw;
+                    
+                }
+            }
+        }
+        #series{
+            font-size: 9vw;
+        }
+        h2{
+            font-size: 11vw;
+        }
+    }
+}

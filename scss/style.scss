@@ -16,5 +16,12 @@ body{
 
 @import './base/var';
 @import './base/list';
-@import'./componentes/navfooter.scss';
-@import'./componentes/libros.scss';
+@import './base/maps';
+@import './base/mixin';
+@import './base/extend';
+@import './componentes/navfooter.scss';
+@import './componentes/inicio.scss';
+@import './componentes/lpp.scss';
+@import './componentes/libros.scss';
+@import './componentes/personajes.scss';
+@import './componentes/jk.scss';

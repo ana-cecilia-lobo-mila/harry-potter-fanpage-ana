@@ -1,0 +1,65 @@
+.jk{
+    h2{
+        @include titulos-f1;
+        @include tamano(3%, 0);
+    }
+    img{
+        display: block;
+        height: 50vw;
+        margin: 0 auto;
+    }
+    p{
+        @include parrafos;
+        margin: 5% 10% ;
+        line-height: 200%;
+    }
+    ul{
+        @include parrafos;
+        list-style: none;
+        padding: 0;
+        li{
+            margin: 7% 3%;
+            line-height: 200%;
+            text-align: justify;
+        }
+
+    }
+}
+
+@media screen and (max-width: 900px){
+    .jk {
+        h2{
+        font-size: 6vw;
+        }
+        img{
+            height: 70vw;
+        }
+        p{
+            font-size: 2.5vw;
+        }
+        ul {
+            li{
+            font-size: 2.5vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .jk {
+        h2{
+        font-size: 9vw;
+        }
+        img{
+            height: 90vw;
+        }
+        p{
+            font-size: 3vw;
+        }
+        ul {
+            li{
+            font-size: 3vw;
+            }
+        }
+    }
+}
