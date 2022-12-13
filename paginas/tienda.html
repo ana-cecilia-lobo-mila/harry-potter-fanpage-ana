@@ -39,56 +39,435 @@
                 <li><a href="./tienda.html">Tienda</a></li>
             </ul>
         </nav>
-    </header>
-    <div class="tienda">    
         <section class="navTienda">
-            <ul>
-                <li><img class="logo" src="../imagenes/logo.png"></li>
-                <li><img class="icon" src="../imagenes/lupa.png"> Buscar</li>
-                <li><img class="icon" src="../imagenes/listaDeseos.png"> Lista de deseos</li>
-                <li><img class="icon" src="../imagenes/carrito.png"> Carrito</li>
-            </ul>
+            
+            <div><img class="logo" src="../imagenes/logo.png"></div>
+            <div><img class="icon" src="../imagenes/lupa.png"> Buscar</div>
+            <div><img class="icon" src="../imagenes/listaDeseos.png"> Lista de deseos</div>
+            <div><img class="icon" src="../imagenes/carrito.png"> Carrito</div>
+            
         </section>
 
         <section class="inicioTienda">
             <!--Fondo en esta seccion-->
             <h2>Tienda</h2>
         </section>
+    </header>
+    <div class="tienda">    
         
         <main class="categorias">
-            <div  class="container">
+            <h2>Categorías</h2>
+            <div class="container" id="categorias">
                 <div class="row d-flex justify-content-center">
-                    <div class="col-3 varitas">Varitas</div>
-                    <div class="col-3 ropa">Ropa</div>
-                    <div class="col-3 dulces">Dulces</div>
+                    <a href="#varita" class="col-lg-3 col-md-3 col-4 varitas">
+                        <div>Varitas</div>
+                    </a>
+                    <a href="#ropa" class="col-lg-3 col-md-3 col-4 ropa">
+                        <div>Ropa</div>
+                    </a>
+                    <a href="#dulces" class="col-lg-3 col-md-3 col-4 dulces">
+                        <div>Dulces</div>
+                    </a>
                 </div>
             </div>
         </main>
 
         <section class="destacados">
-            <!--Artículos nuevos, en carrusel-->
-
-            <!--Foto/banner (ir a tienda oficial)-->
-
+            <img src="../imagenes/banner.webp" class="banner">
             <!--Mejor valorados, en carrusel-->
+            <h2>Mejor vendidos</h2>
+            <div  class="container Cdestacados">
+                <div class="row d-flex justify-content-center" id="row">
+                    <div class="col-lg-3 col-md-3 col-4">
+                        <div class="card">
+                            <img src="../imagenes/cartaHogwarts.webp" class="card-img-top" alt="imagen representativa de carta de hogwarts">
+                            <div class="card-body">
+                              <h5 class="card-title">Carta personalizada de aceptación en Hogwarts</h5>
+                              <p class="card-text">€15.00</p>
+                              <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-4">
+                        <div class="card">
+                            <img src="../imagenes/ranaChocolate.webp" class="card-img-top" alt="Rana de chocolate, Harry potter">
+                            <div class="card-body">
+                              <h5 class="card-title">Rana de chocolate</h5>
+                              <p class="card-text">€8.95</p>
+                              <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-4">
+                        <div class="card">
+                            <img src="../imagenes/grajeas.webp" class="card-img-top" alt="Grajeas de todos los sabores de Bertie Bott">
+                            <div class="card-body">
+                              <h5 class="card-title">Grajeas de todos los sabores de Bertie Bott</h5>
+                              <p class="card-text">€8.95</p>
+                              <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <h2>Tienda oficial</h2>
+            <a href="https://harrypottershop.co.uk/?utm_source=wwd_web" target="_blank"><img src="../imagenes/shop.png" class="shop"></a>       
         </section>
 
-        <section class="varitas">
-            <!--Foto/banner-->
-
-            <!--Productos-->
+        <section class="productos">
+            <h2>Productos</h2>
         </section>
 
-        <section class="ropa">
+        <section class="pvaritas">
             <!--Foto/banner-->
+            <h3 id="varita">Varitas</h3>
+            <img src="../imagenes/tiendaVaritas.webp">
 
-            <!--Productos-->
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="../imagenes/varitaHarry.webp" class="card-img-top" alt="Varita de Harry Potter">
+                            <div class="card-body">
+                              <h5 class="card-title">Varita de Harry Potter</h5>
+                              <p class="card-text">€60.00</p>
+                              <a href="https://harrypottershop.co.uk/collections/wands/products/harry-potters-wooden-wand" class="btn btn-primary" target="_blank">Comprar en la tienda oficial</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="../imagenes/varitaHermione.webp" class="card-img-top" alt="Varita de Hermione Granger">
+                            <div class="card-body">
+                              <h5 class="card-title">Varita de Hermione Granger</h5>
+                              <p class="card-text">€60.00</p>
+                              <a href="https://harrypottershop.co.uk/collections/wands/products/hermione-grangers-wooden-wand" class="btn btn-primary" target="_blank">Comprar en la tienda oficial</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="../imagenes/varitaRon.webp" class="card-img-top" alt="Varita de Ron Weasley">
+                            <div class="card-body">
+                              <h5 class="card-title">Varita de Ron Weasley</h5>
+                              <p class="card-text">€32.00</p>
+                              <a href="https://harrypottershop.co.uk/collections/wands/products/ron-weasleys-wand" class="btn btn-primary" target="_blank">Comprar en la tienda oficial</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="../imagenes/varitaDumbledore.webp" class="card-img-top" alt="Varita Dumbledre">
+                            <div class="card-body">
+                              <h5 class="card-title">Varita Dumbledore</h5>
+                              <p class="card-text">€60.00</p>
+                              <a href="https://harrypottershop.co.uk/collections/wands/products/professor-dumbledores-wooden-wand" class="btn btn-primary" target="_blank">Comprar en la tienda oficial</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="../imagenes/VaritaLuna.webp" class="card-img-top" alt="Varita de Luna Lovegood">
+                            <div class="card-body">
+                              <h5 class="card-title">Varita de Luna Lovegood</h5>
+                              <p class="card-text">€32.00</p>
+                              <a href="https://harrypottershop.co.uk/collections/wands/products/luna-lovegoods-wand" class="btn btn-primary" target="_blank">Comprar en la tienda oficial</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="../imagenes/varitaDraco.webp" class="card-img-top" alt="Varita de Draco Malfoy">
+                            <div class="card-body">
+                              <h5 class="card-title">Varita de Draco Malfoy</h5>
+                              <p class="card-text">€32.00</p>
+                              <a href="https://harrypottershop.co.uk/collections/wands/products/draco-malfoys-wand" class="btn btn-primary" target="_blank">Comprar en la tienda oficial</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="../imagenes/varitaSirius.webp" class="card-img-top" alt="Varita de Sirius Black">
+                            <div class="card-body">
+                              <h5 class="card-title">Varita de Sirius Black</h5>
+                              <p class="card-text">€60.00</p>
+                              <a href="https://harrypottershop.co.uk/collections/wands/products/sirius-blacks-wand" class="btn btn-primary" target="_blank">Comprar en la tienda oficial</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="../imagenes/varitaBellatrix.webp" class="card-img-top" alt="Varita de Bellattrix Lestrange">
+                            <div class="card-body">
+                              <h5 class="card-title">Varita de Bellattrix Lestrange</h5>
+                              <p class="card-text">€32.00</p>
+                              <a href="https://harrypottershop.co.uk/collections/wands/products/bellatrix-lestranges-wand" class="btn btn-primary" target="_blank">Comprar en la tienda oficial</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="../imagenes/varitaSnape.webp" class="card-img-top" alt="Varita Snape">
+                            <div class="card-body">
+                              <h5 class="card-title">Varita Snape</h5>
+                              <p class="card-text">€32.00</p>
+                              <a href="https://harrypottershop.co.uk/collections/wands/products/professor-snapes-wand" class="btn btn-primary" target="_blank">Comprar en la tienda oficial</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="../imagenes/varitaVoldemort.webp" class="card-img-top" alt="Varita de Lord Voldemort">
+                            <div class="card-body">
+                              <h5 class="card-title">Varita de Lord Voldemort</h5>
+                              <p class="card-text">€60.00</p>
+                              <a href="https://harrypottershop.co.uk/collections/wands/products/lord-voldemorts-wand" class="btn btn-primary" target="_blank">Comprar en la tienda oficial</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="../imagenes/varitaFred.webp" class="card-img-top" alt="Varita Fred Weasley">
+                            <div class="card-body">
+                              <h5 class="card-title">Varita Fred Weasley</h5>
+                              <p class="card-text">€32.00</p>
+                              <a href="https://harrypottershop.co.uk/products/fred-weasleys-wand?_pos=1&_psq=fred&_ss=e&_v=1.0" class="btn btn-primary" target="_blank">Comprar en la tienda oficial</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="../imagenes/varitaGeorge.webp" class="card-img-top" alt="Varita de George Weasley">
+                            <div class="card-body">
+                              <h5 class="card-title">Varita de George Weasley</h5>
+                              <p class="card-text">€32.00</p>
+                              <a href="https://harrypottershop.co.uk/products/george-weasleys-wand?_pos=1&_psq=george&_ss=e&_v=1.0" class="btn btn-primary" target="_blank">Comprar en la tienda oficial</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="Dulces">
+        <section class="propa">
             <!--Foto/banner-->
+            <h3 id="ropa">Ropa</h3>
+            <img src="../imagenes/tiendaRopa.jpg">
 
             <!--Productos-->
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="../imagenes/tunicaG.webp" class="card-img-top" alt="Túnica de Gryffindor">
+                            <div class="card-body">
+                              <h5 class="card-title">Túnica de Gryffindor</h5>
+                              <p class="card-text">€74.95</p>
+                              <a href="https://harrypottershop.co.uk/collections/clothing/products/personalised-gryffindor-robe" class="btn btn-primary" target="_blank">Comprar en la tienda oficial</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="../imagenes/tunicaS.webp" class="card-img-top" alt="Túnica de Slytherin">
+                            <div class="card-body">
+                                <h5 class="card-title">Túnica de Slytherin</h5>
+                                <p class="card-text">€74.95</p>
+                                <a href="https://harrypottershop.co.uk/collections/clothing/products/personalised-slytherin-robe" class="btn btn-primary" target="_blank">Comprar en la tienda oficial</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="../imagenes/tunicaR.webp" class="card-img-top" alt="Túnica de Ravenclaw">
+                            <div class="card-body">
+                                <h5 class="card-title"></h5>
+                                <p class="card-text">€74.95</p>
+                                <a href="https://harrypottershop.co.uk/collections/clothing/products/personalised-ravenclaw-robe" class="btn btn-primary" target="_blank">Comprar en la tienda oficial</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="../imagenes/tunicaH.webp" class="card-img-top" alt="Túnica de Hufflepuff">
+                            <div class="card-body">
+                                <h5 class="card-title">Túnica de Hufflepuff</h5>
+                                <p class="card-text">€74.95</p>
+                                <a href="https://harrypottershop.co.uk/collections/clothing/products/personalised-hufflepuff-robe" class="btn btn-primary" target="_blank">Comprar en la tienda oficial</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="../imagenes/sweaterG.webp" class="card-img-top" alt="Sweater de Gryffindor de quidditch">
+                            <div class="card-body">
+                                <h5 class="card-title">Sweater de Gryffindor de quidditch</h5>
+                                <p class="card-text">€45.00</p>
+                                <a href="https://harrypottershop.co.uk/collections/clothing/products/platform-9-3-4-gryffindor-quidditch-jumper" class="btn btn-primary" target="_blank">Comprar en la tienda oficial</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="../imagenes/sweaterS.webp" class="card-img-top" alt="Sweater de Slythrein de quidditch">
+                            <div class="card-body">
+                                <h5 class="card-title">Sweater de Slythrein de quidditch</h5>
+                                <p class="card-text">€45.00</p>
+                                <a href="https://harrypottershop.co.uk/collections/clothing/products/platform-9-3-4-slytherin-quidditch-jumper" class="btn btn-primary" target="_blank">Comprar en la tienda oficial</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="../imagenes/sweaterRon.webp" class="card-img-top" alt="Sweater de Ron">
+                            <div class="card-body">
+                                <h5 class="card-title">Sweater de Ron</h5>
+                                <p class="card-text">€45.00</p>
+                                <a href="https://harrypottershop.co.uk/collections/clothing/products/ron-weasley-r-replica-jumper" class="btn btn-primary" target="_blank">Comprar en la tienda oficial</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="../imagenes/sweaterR.webp" class="card-img-top" alt="Sweater de Ravenclaw de Quidditch">
+                            <div class="card-body">
+                                <h5 class="card-title">Sweater de Ravenclaw de Quidditch</h5>
+                                <p class="card-text">€45.00</p>
+                                <a href="https://harrypottershop.co.uk/collections/clothing/products/platform-9-3-4-ravenclaw-quidditch-jumper" class="btn btn-primary" target="_blank">Comprar en la tienda oficial</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="../imagenes/sweaterHP.webp" class="card-img-top" alt="Sweater Harry Potter">
+                            <div class="card-body">
+                                <h5 class="card-title">Sweater Harry Potter</h5>
+                                <p class="card-text">€45.00</p>
+                                <a href="https://harrypottershop.co.uk/collections/clothing/products/harry-potter-h-replica-jumper" class="btn btn-primary" target="_blank">Comprar en la tienda oficial</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="../imagenes/bufandaG.webp" class="card-img-top" alt="Bufanda tejida de gryffindor">
+                            <div class="card-body">
+                                <h5 class="card-title">Bufanda tejida de gryffindor</h5>
+                                <p class="card-text">€18.00</p>
+                                <a href="https://harrypottershop.co.uk/collections/clothing/products/gryffindor-knitted-crest-scarf" class="btn btn-primary" target="_blank">Comprar en la tienda oficial</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="../imagenes/BufandaS.webp" class="card-img-top" alt="Bufanda tejida de slytherin">
+                            <div class="card-body">
+                                <h5 class="card-title">Bufanda tejida de slytherin</h5>
+                                <p class="card-text">€18.00</p>
+                                <a href="https://harrypottershop.co.uk/collections/clothing/products/slytherin-knitted-crest-scarf" class="btn btn-primary" target="_blank">Comprar en la tienda oficial</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="../imagenes/bufandaR.webp" class="card-img-top" alt="Bufanda tejida de ravenclaw">
+                            <div class="card-body">
+                                <h5 class="card-title">Bufanda tejida de ravenclaw</h5>
+                                <p class="card-text">€18.00</p>
+                                <a href="https://harrypottershop.co.uk/collections/clothing/products/ravenclaw-knitted-crest-scarf" class="btn btn-primary" target="_blank">Comprar en la tienda oficial</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pdulces">
+            <!--Foto/banner-->
+            <h3 id="dulces">Dulces</h3>
+            <img src="../imagenes/hneydukes.jfif">
+
+
+            <!--Productos-->
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="../imagenes/ranaChocolate.webp" class="card-img-top" alt="Rana de chocolate">
+                            <div class="card-body">
+                              <h5 class="card-title">Rana de chocolate</h5>
+                              <p class="card-text">€8.95</p>
+                              <a href="https://harrypottershop.co.uk/collections/sweet-and-treats/products/chocolate-frog-with-authentic-film-packaging" class="btn btn-primary" target="_blank">Comprar en la tienda oficial</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="../imagenes/grajeas.webp" class="card-img-top" alt="Grajeas de todos los sabores de Bertie Bott">
+                            <div class="card-body">
+                              <h5 class="card-title">Grajeas de todos los sabores de Bertie Bott</h5>
+                              <p class="card-text">€8.95</p>
+                              <a href="https://harrypottershop.co.uk/collections/sweet-and-treats/products/bertie-botts-every-flavour-beans" class="btn btn-primary" target="_blank">Comprar en la tienda oficial</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="../imagenes/cervezaMantequilla.webp" class="card-img-top" alt="Cerveza de mantequilla">
+                            <div class="card-body">
+                              <h5 class="card-title">Cerveza de mantequilla</h5>
+                              <p class="card-text">€5.95</p>
+                              <a href="https://harrypottershop.co.uk/collections/sweet-and-treats/products/bottled-butterbeer" class="btn btn-primary" target="_blank">Comprar en la tienda oficial</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="../imagenes/bonbons.webp" class="card-img-top" alt="Bonbons">
+                            <div class="card-body">
+                              <h5 class="card-title">Bonbons</h5>
+                              <p class="card-text">€8.00</p>
+                              <a href="https://harrypottershop.co.uk/collections/sweet-and-treats/products/harry-potter-exploding-bon-bons" class="btn btn-primary" target="_blank">Comprar en la tienda oficial</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="../imagenes/chocolateH.webp" class="card-img-top" alt="Chocolate de leche de Honeydukes">
+                            <div class="card-body">
+                              <h5 class="card-title">Chocolate de leche de Honeydukes</h5>
+                              <p class="card-text">€6.00</p>
+                              <a href="https://harrypottershop.co.uk/collections/sweet-and-treats/products/honeydukes-honeycomb" class="btn btn-primary" target="_blank">Comprar en la tienda oficial</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="../imagenes/gringotts.webp" class="card-img-top" alt="Bolsa de galeones de chocolate">
+                            <div class="card-body">
+                              <h5 class="card-title">Bolsa de galeones de chocolate</h5>
+                              <p class="card-text">€2.95</p>
+                              <a href="https://harrypottershop.co.uk/collections/sweet-and-treats/products/bag-of-gringotts-galleons-chocolate-coins" class="btn btn-primary" target="_blank">Comprar en la tienda oficial</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 

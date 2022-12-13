@@ -256,7 +256,7 @@ footer #subida img {
 }
 /*Historia*/
 .historiaHogwarts {
-  margin: 5% 0;
+  margin: 5%;
 }
 .historiaHogwarts h2 {
   color: #C7B4A1;
@@ -815,6 +815,319 @@ footer #subida img {
   }
   .jk ul li {
     font-size: 3vw;
+  }
+}
+.fondoTienda {
+  background-image: url("../imagenes/fondoTienda.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.fondoTienda .navEnTienda {
+  margin-top: 3%;
+  background-color: #040d18;
+}
+.fondoTienda .navTienda {
+  background-color: #C7B4A1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.fondoTienda .navTienda div {
+  color: #040d18;
+  font-size: 1.5vw;
+  margin: 0 3%;
+}
+.fondoTienda .navTienda div .logo {
+  height: 7vw;
+  justify-self: flex-start;
+}
+.fondoTienda .navTienda div .icon {
+  height: 2vw;
+}
+.fondoTienda .inicioTienda h2 {
+  color: #C7B4A1;
+  font-size: 5vw;
+  text-align: center;
+  font-family: "Henny Penny", cursive;
+  background-color: #040d18;
+  margin: 15% 0;
+}
+
+.tienda {
+  background-color: #C7B4A1;
+}
+.tienda .categorias h2 {
+  padding-top: 5%;
+  color: #040d18;
+  font-size: 5vw;
+  text-align: center;
+  font-family: "Henny Penny", cursive;
+}
+.tienda .categorias h2::before {
+  margin-right: 2.5rem;
+  content: "--";
+  height: 3px;
+  color: #827365;
+  font-family: "Barlow", sans-serif;
+}
+.tienda .categorias h2::after {
+  margin-left: 2.5rem;
+  content: "--";
+  height: 3px;
+  color: #827365;
+  font-family: "Barlow", sans-serif;
+}
+.tienda .categorias #categorias div a {
+  margin: 5% 3%;
+  padding: 10% 0;
+  text-align: center;
+  text-decoration: none;
+}
+.tienda .categorias #categorias div a:hover {
+  transform: scale(1.1, 1.1);
+  transition: ease 0.3s;
+}
+.tienda .categorias #categorias div a div {
+  font-size: 2.5vw;
+  color: #C7B4A1;
+  text-shadow: 5px 1px 15px #261f1a;
+  text-decoration: none;
+}
+.tienda .categorias #categorias div .varitas {
+  background-image: url("../imagenes/varitas.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.tienda .categorias #categorias div .ropa {
+  background-image: url("../imagenes/ropa.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.tienda .categorias #categorias div .dulces {
+  background-image: url("../imagenes/dulces.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.tienda .destacados .banner {
+  margin: 5% 0;
+  width: 100%;
+}
+.tienda .destacados h2 {
+  margin: 5% 0;
+  color: #040d18;
+  font-size: 5vw;
+  text-align: center;
+  font-family: "Henny Penny", cursive;
+}
+.tienda .destacados h2::before {
+  margin-right: 2.5rem;
+  content: "--";
+  height: 3px;
+  color: #827365;
+  font-family: "Barlow", sans-serif;
+}
+.tienda .destacados h2::after {
+  margin-left: 2.5rem;
+  content: "--";
+  height: 3px;
+  color: #827365;
+  font-family: "Barlow", sans-serif;
+}
+.tienda .destacados div {
+  margin-bottom: 5%;
+}
+.tienda .destacados div div .card {
+  height: 43vw;
+  margin: 5% 0;
+  background-color: #a8927d;
+  border-color: #a8927d;
+}
+.tienda .destacados div div .card h5 {
+  color: #040d18;
+  font-size: 2vw;
+  font-family: "Times New Roman", Times, serif;
+}
+.tienda .destacados div div .card p {
+  color: #040d18;
+  font-size: 1.5vw;
+  font-family: "Times New Roman", Times, serif;
+}
+.tienda .destacados div div .card a {
+  background-color: #a8927d;
+  border-color: #a8927d;
+  font-size: 1.5vw;
+  font-family: "Times New Roman", Times, serif;
+  color: #040d18;
+}
+.tienda .destacados div div .card a:hover {
+  background-color: #040d18;
+  color: #C7B4A1;
+  transform: scale(1.1, 1.1);
+  transition: ease 0.3s;
+}
+.tienda .destacados a img {
+  width: 100%;
+}
+
+.productos h2 {
+  margin: 10% 0 7%;
+  color: #040d18;
+  font-size: 5vw;
+  text-align: center;
+  font-family: "Henny Penny", cursive;
+}
+.productos h2::before {
+  margin-right: 2.5rem;
+  content: "--";
+  height: 3px;
+  color: #827365;
+  font-family: "Barlow", sans-serif;
+}
+.productos h2::after {
+  margin-left: 2.5rem;
+  content: "--";
+  height: 3px;
+  color: #827365;
+  font-family: "Barlow", sans-serif;
+}
+
+.pvaritas h3 {
+  margin-top: 7%;
+  color: #040d18;
+  font-size: 4vw;
+  text-align: center;
+  font-family: "Henny Penny", cursive;
+}
+.pvaritas img {
+  width: 100%;
+  margin: 5% 0;
+}
+.pvaritas .card {
+  height: 43vw;
+  margin: 5% 0;
+  background-color: #a8927d;
+  border-color: #a8927d;
+}
+.pvaritas .card h5 {
+  color: #040d18;
+  font-size: 2vw;
+  font-family: "Times New Roman", Times, serif;
+}
+.pvaritas .card p {
+  color: #040d18;
+  font-size: 1.5vw;
+  font-family: "Times New Roman", Times, serif;
+}
+.pvaritas .card a {
+  background-color: #a8927d;
+  border-color: #a8927d;
+  font-size: 1.5vw;
+  font-family: "Times New Roman", Times, serif;
+  color: #040d18;
+}
+.pvaritas .card a:hover {
+  background-color: #040d18;
+  color: #C7B4A1;
+  transform: scale(1.1, 1.1);
+  transition: ease 0.3s;
+}
+
+.propa h3 {
+  margin-top: 7%;
+  color: #040d18;
+  font-size: 4vw;
+  text-align: center;
+  font-family: "Henny Penny", cursive;
+}
+.propa img {
+  width: 100%;
+  margin: 5% 0;
+}
+.propa .card {
+  height: 43vw;
+  margin: 5% 0;
+  background-color: #a8927d;
+  border-color: #a8927d;
+}
+.propa .card h5 {
+  color: #040d18;
+  font-size: 2vw;
+  font-family: "Times New Roman", Times, serif;
+}
+.propa .card p {
+  color: #040d18;
+  font-size: 1.5vw;
+  font-family: "Times New Roman", Times, serif;
+}
+.propa .card a {
+  background-color: #a8927d;
+  border-color: #a8927d;
+  font-size: 1.5vw;
+  font-family: "Times New Roman", Times, serif;
+  color: #040d18;
+}
+.propa .card a:hover {
+  background-color: #040d18;
+  color: #C7B4A1;
+  transform: scale(1.1, 1.1);
+  transition: ease 0.3s;
+}
+
+.pdulces h3 {
+  margin-top: 7%;
+  color: #040d18;
+  font-size: 4vw;
+  text-align: center;
+  font-family: "Henny Penny", cursive;
+}
+.pdulces img {
+  width: 100%;
+  margin: 5% 0;
+}
+.pdulces .card {
+  height: 43vw;
+  margin: 5% 0;
+  background-color: #a8927d;
+  border-color: #a8927d;
+}
+.pdulces .card h5 {
+  color: #040d18;
+  font-size: 2vw;
+  font-family: "Times New Roman", Times, serif;
+}
+.pdulces .card p {
+  color: #040d18;
+  font-size: 1.5vw;
+  font-family: "Times New Roman", Times, serif;
+}
+.pdulces .card a {
+  background-color: #a8927d;
+  border-color: #a8927d;
+  font-size: 1.5vw;
+  font-family: "Times New Roman", Times, serif;
+  color: #040d18;
+}
+.pdulces .card a:hover {
+  background-color: #040d18;
+  color: #C7B4A1;
+  transform: scale(1.1, 1.1);
+  transition: ease 0.3s;
+}
+
+@media screen and (max-width: 900px) {
+  .tienda .navTienda div {
+    font-size: 2.5vw;
+  }
+  .tienda .inicioTienda {
+    background-image: url("../imagenes/tiendaTablet.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 }
 

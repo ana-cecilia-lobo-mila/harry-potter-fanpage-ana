@@ -1,0 +1,255 @@
+.fondoTienda{
+    background-image: url("../imagenes/fondoTienda.jpeg");  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    .navEnTienda{
+        margin-top: 3%;
+        background-color: #040d18;
+    }
+    .navTienda{
+        background-color: #C7B4A1;
+        display: flex;
+        justify-content:flex-end;
+        align-items: center;
+        flex-wrap: wrap;
+        div{
+            color: #040d18;
+            font-size: 1.5vw;
+            margin: 0 3%;
+            .logo{
+                height: 7vw;
+                justify-self: flex-start;
+            }
+                
+            .icon{
+                height: 2vw; 
+            }                
+        } 
+    }
+
+    .inicioTienda{
+        h2{
+            @include titulos-f1;
+            background-color: #040d18;
+            margin: 15% 0;
+        }
+    }
+}
+
+
+.tienda{
+    background-color: #C7B4A1;
+    .categorias{
+        h2{
+            padding-top: 5%;
+            @include titulos-f2;
+            &::before{
+                @include antes;
+            }
+            &::after{
+            @include despues;
+            }
+        }
+        #categorias{
+            div{
+                a{
+                    margin: 5% 3%;
+                    padding: 10% 0;
+                    text-align: center;
+                    text-decoration: none;
+                    &:hover{
+                        transform: scale(1.1, 1.1);
+                        transition: ease 0.3s;
+                    }
+                    div{
+                        font-size: 2.5vw;
+                        color: #C7B4A1;
+                        text-shadow: 5px 1px 15px #261f1a;
+                        text-decoration: none;
+                    }
+                }
+                .varitas{
+                    background-image: url("../imagenes/varitas.webp");
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    
+                }
+                
+                .ropa{
+                    background-image: url("../imagenes/ropa.webp");
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    
+                }
+                
+                .dulces{
+                    background-image: url("../imagenes/dulces.webp");
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    
+                }
+            }
+        }
+    }
+
+    .destacados{
+        .banner{
+            margin: 5% 0;
+            width: 100%;
+        }
+        h2{
+            margin: 5% 0;
+            @include titulos-f2;
+            &::before{
+                @include antes;
+            }
+            &::after{
+            @include despues;
+            }
+        }
+        div{
+            margin-bottom: 5%;
+            div{
+                .card{
+                    @include card;
+                    h5{
+                        @include h5;
+                    }
+                    p{
+                        @include pp;
+                    }
+                    a{
+                        @include pa;
+                        
+                        &:hover{
+                           @include pahover;
+                        }
+                    }
+                }
+            }
+        
+        }
+        a{
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+.productos{
+    h2{
+        margin: 10% 0 7%;
+        @include titulos-f2;
+        &::before{
+            @include antes;
+        }
+        &::after{
+        @include despues;
+        }
+    }
+}
+
+.pvaritas{
+    h3{
+        margin-top: 7%;
+        @include titulos-f3;
+    }
+    img{
+        width: 100%;
+        margin: 5% 0;
+    }
+    .card{
+        @include card;
+        h5{
+            @include h5;
+        }
+        p{
+            @include pp;
+        }
+        a{
+            @include pa;
+            &:hover{
+                @include pahover;
+            }
+        }
+                
+    }
+    
+}
+
+.propa{
+    h3{
+        margin-top: 7%;
+        @include titulos-f3;
+    }
+    img{
+        width: 100%;
+        margin: 5% 0;
+    }
+    .card{
+        @include card;
+        h5{
+            @include h5;
+        }
+        p{
+            @include pp;
+        }
+        a{
+            @include pa;
+            &:hover{
+                @include pahover;
+            }
+        }
+                
+    }
+}
+
+.pdulces{
+    h3{
+        margin-top: 7%;
+        @include titulos-f3;
+    }
+    img{
+        width: 100%;
+        margin: 5% 0;
+    }
+    .card{
+        @include card;
+        h5{
+            @include h5;
+        }
+        p{
+            @include pp;
+        }
+        a{
+            @include pa;
+            &:hover{
+                @include pahover;
+            }
+        }
+                
+    }
+}
+
+@media screen and (max-width: 900px) {
+    
+    .tienda{
+        .navTienda{
+            div{
+                font-size: 2.5vw;
+            }
+        }
+    
+        .inicioTienda{
+            background-image: url("../imagenes/tiendaTablet.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+    }
+}

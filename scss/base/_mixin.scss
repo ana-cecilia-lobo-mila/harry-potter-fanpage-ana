@@ -19,6 +19,13 @@
     font-family: 'Henny Penny', cursive;
 }
 
+@mixin titulos-f3{
+    color: #040d18;
+    font-size: 4vw;
+    text-align: center;
+    font-family: 'Henny Penny', cursive;
+}
+
 @mixin antes{
     margin-right: 2.5rem;
     content: "--";
@@ -46,4 +53,38 @@
 @mixin tamano ($margen, $pad){
     margin: $margen;
     padding: $pad;
+}
+
+@mixin card{
+    height: 43vw;
+    margin: 5% 0;
+    background-color: #a8927d;
+    border-color: #a8927d;
+}
+
+@mixin h5{
+    color:#040d18;
+    font-size: 2vw;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@mixin pp{
+    color:#040d18;
+    font-size: 1.5vw;
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+@mixin pa{
+    background-color: #a8927d;
+    border-color: #a8927d;
+    font-size: 1.5vw;
+    font-family: 'Times New Roman', Times, serif; 
+    color:#040d18;
+}
+
+@mixin pahover{
+    background-color: #040d18; 
+    color:#C7B4A1;
+    transform: scale(1.1, 1.1);
+    transition: ease 0.3s;
 }
