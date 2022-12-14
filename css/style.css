@@ -833,6 +833,7 @@ footer #subida img {
   justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
+  padding: 3% 0;
 }
 .fondoTienda .navTienda div {
   color: #040d18;
@@ -1241,7 +1242,7 @@ footer #subida img {
     font-size: 9vw;
   }
   .tienda .destacados div div .card {
-    height: 80vw;
+    height: 85vw;
   }
   .tienda .destacados div div .card h5 {
     font-size: 3.5vw;
@@ -1259,7 +1260,7 @@ footer #subida img {
     font-size: 7vw;
   }
   .tienda .pvaritas .card {
-    height: 80vw;
+    height: 85vw;
   }
   .tienda .pvaritas .card h5 {
     font-size: 3.5vw;
@@ -1274,7 +1275,7 @@ footer #subida img {
     font-size: 7vw;
   }
   .tienda .propa .card {
-    height: 80vw;
+    height: 85vw;
   }
   .tienda .propa .card h5 {
     font-size: 3.5vw;
@@ -1289,7 +1290,7 @@ footer #subida img {
     font-size: 6vw;
   }
   .tienda .pdulces .card {
-    height: 83vw;
+    height: 85vw;
   }
   .tienda .pdulces .card h5 {
     font-size: 3.5vw;
