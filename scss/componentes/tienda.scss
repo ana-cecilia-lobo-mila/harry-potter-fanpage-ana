@@ -32,7 +32,7 @@
         h2{
             @include titulos-f1;
             background-color: #040d18;
-            margin: 15% 0;
+            margin: 17% 0;
         }
     }
 }
@@ -40,6 +40,7 @@
 
 .tienda{
     background-color: #C7B4A1;
+    padding-bottom: 5%;
     .categorias{
         h2{
             padding-top: 5%;
@@ -236,20 +237,273 @@
     }
 }
 
+
 @media screen and (max-width: 900px) {
     
-    .tienda{
+    .fondoTienda{
+        background-image: url("../imagenes/tiendaTablet.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
         .navTienda{
             div{
                 font-size: 2.5vw;
             }
         }
-    
         .inicioTienda{
-            background-image: url("../imagenes/tiendaTablet.jpg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 100%;
+            h2{
+                font-size: 7vw;
+            }
         }
     }
+    .tienda{
+        .categorias{
+            h2{
+                font-size: 7vw;
+            }
+            #categorias{
+                div{
+                    a{
+                        div{
+                            font-size: 3vw;
+                        }
+                    }
+                }   
+            }
+        }
+        .destacados{
+            h2{
+                font-size: 7vw;
+            }
+            div{
+                div{
+                    .card{
+                        height: 50vw; 
+                        h5{
+                            font-size: 2.3vw; 
+                        }
+                        p{
+                            font-size: 2vw;
+                        }
+                        a{
+                            font-size: 2vw;
+                        }    
+                    }
+
+                }
+            }
+        }
+        .productos{
+            h2{
+                font-size: 7vw;
+            }
+        }
+        .pvaritas{
+            h3{
+                font-size: 6vw;
+            }
+            .card{
+                height: 50vw; 
+                h5{
+                    font-size: 2.3vw; 
+                }
+                p{
+                    font-size: 2vw;
+                }
+                a{
+                    font-size: 2vw;
+                }
+                        
+            }
+        }
+
+        .propa{
+            h3{
+                font-size: 6vw;
+            }
+            .card{
+                height: 50vw; 
+                h5{
+                    font-size: 2.3vw; 
+                }
+                p{
+                    font-size: 2vw;
+                }
+                a{
+                    font-size: 2vw;
+                }
+                        
+            }
+        }
+
+        .pdulces{
+            h3{
+                font-size: 6vw;
+            }
+            .card{
+                height: 50vw; 
+                h5{
+                    font-size: 2.3vw; 
+                }
+                p{
+                    font-size: 2vw;
+                }
+                a{
+                    font-size: 2vw;
+                }
+                        
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .tienda{
+        .destacados{
+            div{
+                div{
+                    .card{
+                        height: 55vw;
+                    }
+                }
+            }
+        }
+        .pvaritas{
+            .card{
+                height: 60vw;
+            }
+        }
+        .propa{
+            .card{
+                height: 60vw;
+            }
+        }
+        .pdulces{
+            .card{
+                height: 60vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+    .fondoTienda{
+        background-image: url("../imagenes/tiendaCelular.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        .navTienda{
+            div{
+                font-size: 3.5vw;
+            }
+        }
+        .inicioTienda{
+            h2{
+                font-size: 9vw;
+                margin: 30% 0;
+            }
+        }
+    }
+    .tienda{
+        .categorias{
+            h2{
+                font-size: 9vw;
+            }
+            #categorias{
+                div{
+                    a{
+                        div{
+                            font-size: 3.5vw;
+                        }
+                    }
+                }   
+            }
+        }
+        .destacados{
+            h2{
+                font-size: 9vw;
+            }
+            div{
+                div{
+                    .card{
+                        height: 80vw; 
+                        h5{
+                            font-size: 3.5vw; 
+                        }
+                        p{
+                            font-size: 3vw;
+                        }
+                        a{
+                            font-size: 3vw;
+                        }    
+                    }
+
+                }
+            }
+        }
+        .productos{
+            h2{
+                font-size: 9vw;
+            }
+        }
+        .pvaritas{
+            h3{
+                font-size: 7vw;
+            }
+            .card{
+                height: 80vw; 
+                h5{
+                    font-size: 3.5vw; 
+                }
+                p{
+                    font-size: 3vw;
+                }
+                a{
+                    font-size: 3vw;
+                }
+                        
+            }
+        }
+
+        .propa{
+            h3{
+                font-size: 7vw;
+            }
+            .card{
+                height: 80vw; 
+                h5{
+                    font-size: 3.5vw; 
+                }
+                p{
+                    font-size: 3vw;
+                }
+                a{
+                    font-size: 3vw;
+                }
+                        
+            }
+        }
+
+        .pdulces{
+            h3{
+                font-size: 6vw;
+            }
+            .card{
+                height: 83vw; 
+                h5{
+                    font-size: 3.5vw; 
+                }
+                p{
+                    font-size: 3vw;
+                }
+                a{
+                    font-size: 3vw;
+                }
+                        
+            }
+        }
+    }
+
 }
