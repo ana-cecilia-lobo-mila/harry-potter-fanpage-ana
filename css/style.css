@@ -71,6 +71,26 @@ header nav ul li a:hover::after {
   transform-origin: bottom left;
 }
 
+.boton #subida {
+  float: right;
+  margin: 2%;
+  position: fixed;
+  z-index: 10;
+  bottom: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+}
+.boton #subida img {
+  height: 70px;
+  width: 70px;
+}
+.boton #subida img:hover {
+  transform: scale(1.3, 1.3);
+  transition: ease 0.3s;
+}
+
 footer {
   display: block;
   background-color: #040d18;
@@ -101,14 +121,6 @@ footer a img {
 footer a img:hover {
   transform: scale(1.3, 1.3);
   transition: ease 0.3s;
-}
-footer #subida {
-  display: block;
-  text-align: center;
-  margin-top: 2%;
-}
-footer #subida img {
-  margin: auto;
 }
 
 @media screen and (max-width: 900px) {
@@ -265,6 +277,7 @@ footer #subida img {
   font-family: "Henny Penny", cursive;
   margin: 3%;
   padding: 0;
+  margin: 3%;
 }
 .historiaHogwarts h2::before {
   margin-right: 2.5rem;
@@ -288,6 +301,7 @@ footer #subida img {
   margin: 3% 1%;
   padding: 0;
   align-self: center;
+  margin: 0 3%;
 }
 .historiaHogwarts img {
   margin: 3% 1%;
@@ -313,6 +327,20 @@ footer #subida img {
   font-family: "Henny Penny", cursive;
   margin: 3%;
   padding: 0;
+}
+.datosCuriosos h2::before {
+  margin-right: 2.5rem;
+  content: "--";
+  height: 3px;
+  color: #827365;
+  font-family: "Barlow", sans-serif;
+}
+.datosCuriosos h2::after {
+  margin-left: 2.5rem;
+  content: "--";
+  height: 3px;
+  color: #827365;
+  font-family: "Barlow", sans-serif;
 }
 
 #ordenDatos {
@@ -406,7 +434,7 @@ footer #subida img {
     margin: 20% 0;
   }
   .datosCuriosos h2 {
-    font-size: 10vw;
+    font-size: 9vw;
   }
   #ordenDatos p {
     font-size: 3.5vw;
@@ -784,9 +812,11 @@ footer #subida img {
   padding: 0;
 }
 .jk ul li {
-  margin: 7% 3%;
+  margin: 5% 2%;
+  padding: 3%;
   line-height: 200%;
   text-align: justify;
+  background-color: #081521;
 }
 
 @media screen and (max-width: 900px) {
@@ -1290,7 +1320,7 @@ footer #subida img {
     font-size: 6vw;
   }
   .tienda .pdulces .card {
-    height: 85vw;
+    height: 90vw;
   }
   .tienda .pdulces .card h5 {
     font-size: 3.5vw;
