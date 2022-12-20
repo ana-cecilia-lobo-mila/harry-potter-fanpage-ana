@@ -1,3 +1,4 @@
+/*TIenda*/
 .fondoTienda{
     background-image: url("../imagenes/fondoTienda.jpeg");  
     background-position: center;
@@ -238,7 +239,7 @@
     }
 }
 
-
+/*Media queries tiendas*/
 @media screen and (max-width: 900px) {
     
     .fondoTienda{

@@ -21,6 +21,7 @@ body {
   margin: 3%;
 }
 
+/*Nav*/
 header {
   padding-bottom: 2%;
 }
@@ -71,6 +72,7 @@ header nav ul li a:hover::after {
   transform-origin: bottom left;
 }
 
+/*Boton subida*/
 .boton #subida {
   float: right;
   margin: 2%;
@@ -91,6 +93,7 @@ header nav ul li a:hover::after {
   transition: ease 0.3s;
 }
 
+/*Footer*/
 footer {
   display: block;
   background-color: #040d18;
@@ -123,6 +126,7 @@ footer a img:hover {
   transition: ease 0.3s;
 }
 
+/*Media queries*/
 @media screen and (max-width: 900px) {
   header nav {
     padding: 5% 0;
@@ -443,7 +447,7 @@ footer a img:hover {
     height: 35vw;
   }
 }
-/*lpp*/
+/*libros peliculas y personajes (listas)*/
 .listas {
   padding-top: 5%;
 }
@@ -493,6 +497,7 @@ footer a img:hover {
   display: block;
   margin: 10% 0;
 }
+/*Media queries lpp*/
 @media screen and (max-width: 900px) {
   .listas ul li {
     font-size: 2vw;
@@ -521,6 +526,7 @@ footer a img:hover {
     font-size: 11vw;
   }
 }
+/*Libros y peliculas*/
 .listas {
   margin: 0 5%;
 }
@@ -648,6 +654,7 @@ footer a img:hover {
     transform: rotateY(0deg);
   }
 }
+/*Fondo Libros y peliculas*/
 .fondoLibros {
   background-image: url("../imagenes/fondoLibros.jpg");
   background-position: center center;
@@ -669,6 +676,7 @@ footer a img:hover {
   padding: 10% 0 30% 0;
 }
 
+/*Media queries Libros y peliculas*/
 @media screen and (max-width: 900px) {
   .libros {
     padding: 190px 0;
@@ -733,6 +741,7 @@ footer a img:hover {
     font-size: 3vw;
   }
 }
+/*Personjes*/
 .fondoPersonajes {
   background-image: url("../imagenes/fondoPersonajes.jpg");
   background-position: center center;
@@ -771,6 +780,7 @@ footer a img:hover {
   height: 20vw;
 }
 
+/*Media queries personjes*/
 @media screen and (max-width: 900px) {
   .fondoPersonajes {
     background-image: url("../imagenes/personjesTablet.jpg");
@@ -805,6 +815,7 @@ footer a img:hover {
     height: 30vw;
   }
 }
+/*Inicio JK*/
 .jk h2 {
   color: #C7B4A1;
   font-size: 5vw;
@@ -842,6 +853,7 @@ footer a img:hover {
   background-color: #081521;
 }
 
+/*Articulos JK*/
 article h2 {
   color: #C7B4A1;
   font-size: 5vw;
@@ -893,6 +905,7 @@ article div div div a:hover {
   transition: ease 0.3s;
 }
 
+/*Media queries JK*/
 @media screen and (max-width: 900px) {
   .jk h2 {
     font-size: 6vw;
@@ -945,6 +958,7 @@ article div div div a:hover {
     font-size: 3.2vw;
   }
 }
+/*TIenda*/
 .fondoTienda {
   background-image: url("../imagenes/fondoTienda.jpeg");
   background-position: center;
@@ -1249,6 +1263,7 @@ article div div div a:hover {
   transition: ease 0.3s;
 }
 
+/*Media queries tiendas*/
 @media screen and (max-width: 900px) {
   .fondoTienda {
     background-image: url("../imagenes/tiendaTablet.jpg");

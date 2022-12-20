@@ -1,3 +1,4 @@
+/*Nav*/
 header{
     padding-bottom: 2%;
     nav{
@@ -50,7 +51,7 @@ header{
    
 }
 
-
+/*Boton subida*/
 .boton{
 
     #subida{
@@ -75,7 +76,7 @@ header{
     }
 }
 
-
+/*Footer*/
 footer{
     display: block;
     background-color: nth($colores , 2);
@@ -109,6 +110,8 @@ footer{
     
 }
 
+
+/*Media queries*/
 
   @media screen and (max-width: 900px) {
     header{

@@ -1,3 +1,4 @@
+/*Inicio JK*/
 .jk{
     h2{
         @include titulos-f1;
@@ -28,6 +29,7 @@
     }
 }
 
+/*Articulos JK*/
 article {
     h2{
         @include titulos-f1;
@@ -71,7 +73,7 @@ article {
 }
 
 
-
+/*Media queries JK*/
 @media screen and (max-width: 900px){
     .jk {
         h2{

@@ -1,3 +1,4 @@
+/*Libros y peliculas*/
 .listas{
     margin: 0 5%;
         #cardBox {
@@ -123,7 +124,6 @@
                 }
             }
         }
-    
 }
 
 @-webkit-keyframes giro {
@@ -145,6 +145,7 @@
   }
 
   
+  /*Fondo Libros y peliculas*/
 .fondoLibros{
     background-image: url("../imagenes/fondoLibros.jpg");
     @include background-general;
@@ -161,7 +162,7 @@
 }
 
 
-
+/*Media queries Libros y peliculas*/
   @media screen and (max-width: 900px) {
         .libros{
             padding: 190px 0;

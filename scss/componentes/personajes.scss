@@ -1,3 +1,4 @@
+/*Personjes*/
 .fondoPersonajes{
     background-image: url("../imagenes/fondoPersonajes.jpg");
     @include background-general;
@@ -39,6 +40,8 @@
     }
 }
 
+
+/*Media queries personjes*/
 @media screen and (max-width: 900px){
     
     .fondoPersonajes{
