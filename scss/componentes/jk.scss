@@ -28,6 +28,50 @@
     }
 }
 
+article {
+    h2{
+        @include titulos-f1;
+        @include tamano(3%, 0);
+        &::before{
+            @include antes;
+        }
+        &::after{
+            @include despues;
+        }
+        margin: 5% 0;
+    }
+    div{
+        div{
+            div{
+                margin: 7% 0;
+                background-color: #081521;
+                padding: 5% 3%;
+                img{
+                    display:block;
+                    height: 20vw;
+                    margin: auto;
+                }
+                p{
+                    @include parrafos;
+                }
+                a{
+                    background-color: nth($colores , 1);
+                    color: nth($colores , 2);
+                    font-size: nth($fz , 2);
+                    padding: 2%;
+                    &:hover{
+                        color: nth($colores , 2);
+                        transform: scale(1.5,1.5);
+                        transition: ease 0.3s;  
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
 @media screen and (max-width: 900px){
     .jk {
         h2{
@@ -42,6 +86,26 @@
         ul {
             li{
             font-size: 2.5vw;
+            }
+        }
+    }
+    article{
+        h2{
+            font-size: 6vw;  
+        }
+        div{
+            div{
+                div{
+                    img{
+                        height: 25vw;
+                    }
+                    p{
+                        font-size: 2.5vw;
+                    }
+                    a{
+                        font-size: 2.7vw
+                    }
+                }
             }
         }
     }
@@ -61,6 +125,26 @@
         ul {
             li{
             font-size: 3vw;
+            }
+        }
+    }
+    article{
+        h2{
+            font-size: 9vw;
+            }
+        div{
+            div{
+                div{
+                    img{
+                        height: 30vw;
+                    }
+                    p{
+                        font-size: 3vw;
+                    }
+                    a{
+                        font-size: 3.2vw;
+                    }
+                }
             }
         }
     }

@@ -724,7 +724,7 @@ footer a img:hover {
     font-size: 3vw;
   }
   .listas #cardBox .card h3 {
-    font-size: 3vw;
+    font-size: 4vw;
   }
   .listas #cardBox .card img {
     height: 40vw;
@@ -754,6 +754,23 @@ footer a img:hover {
   padding: 20% 0;
 }
 
+.listas {
+  margin: 1%;
+}
+.listas .listaPersonajes {
+  margin: 0;
+}
+.listas .listaPersonajes div ul ul div li {
+  background-color: #040d18;
+  padding: 5% 0;
+  margin: 2%;
+  text-align: center;
+  font-size: 1.7vw;
+}
+.listas .listaPersonajes div ul ul div li img {
+  height: 20vw;
+}
+
 @media screen and (max-width: 900px) {
   .fondoPersonajes {
     background-image: url("../imagenes/personjesTablet.jpg");
@@ -780,6 +797,12 @@ footer a img:hover {
   }
   .personajes {
     padding: 230px 0;
+  }
+  .listas .listaPersonajes div ul ul div li {
+    font-size: 3.5vw !important;
+  }
+  .listas .listaPersonajes div ul ul div li img {
+    height: 30vw;
   }
 }
 .jk h2 {
@@ -819,6 +842,57 @@ footer a img:hover {
   background-color: #081521;
 }
 
+article h2 {
+  color: #C7B4A1;
+  font-size: 5vw;
+  text-align: center;
+  font-family: "Henny Penny", cursive;
+  margin: 3%;
+  padding: 0;
+  margin: 5% 0;
+}
+article h2::before {
+  margin-right: 2.5rem;
+  content: "--";
+  height: 3px;
+  color: #827365;
+  font-family: "Barlow", sans-serif;
+}
+article h2::after {
+  margin-left: 2.5rem;
+  content: "--";
+  height: 3px;
+  color: #827365;
+  font-family: "Barlow", sans-serif;
+}
+article div div div {
+  margin: 7% 0;
+  background-color: #081521;
+  padding: 5% 3%;
+}
+article div div div img {
+  display: block;
+  height: 20vw;
+  margin: auto;
+}
+article div div div p {
+  color: #C7B4A1;
+  font-size: 1.5vw;
+  font-family: "Times New Roman", Times, serif;
+  text-align: justify;
+}
+article div div div a {
+  background-color: #C7B4A1;
+  color: #040d18;
+  font-size: 1.7vw;
+  padding: 2%;
+}
+article div div div a:hover {
+  color: #040d18;
+  transform: scale(1.5, 1.5);
+  transition: ease 0.3s;
+}
+
 @media screen and (max-width: 900px) {
   .jk h2 {
     font-size: 6vw;
@@ -831,6 +905,18 @@ footer a img:hover {
   }
   .jk ul li {
     font-size: 2.5vw;
+  }
+  article h2 {
+    font-size: 6vw;
+  }
+  article div div div img {
+    height: 25vw;
+  }
+  article div div div p {
+    font-size: 2.5vw;
+  }
+  article div div div a {
+    font-size: 2.7vw;
   }
 }
 @media screen and (max-width: 600px) {
@@ -845,6 +931,18 @@ footer a img:hover {
   }
   .jk ul li {
     font-size: 3vw;
+  }
+  article h2 {
+    font-size: 9vw;
+  }
+  article div div div img {
+    height: 30vw;
+  }
+  article div div div p {
+    font-size: 3vw;
+  }
+  article div div div a {
+    font-size: 3.2vw;
   }
 }
 .fondoTienda {

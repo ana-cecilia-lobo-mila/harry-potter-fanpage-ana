@@ -10,6 +10,33 @@
 
 .personajes{
     padding: 20% 0;
+    
+}
+
+.listas{
+    margin: 1%;
+    .listaPersonajes{
+        margin: 0;
+        div{
+
+            ul{
+                ul{
+                    div{
+                        li{
+                            background-color: #040d18;
+                            padding: 5% 0;
+                            margin: 2%;
+                            text-align: center;
+                            font-size: nth($fz, 2);
+                            img{
+                                height: 20vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 900px){
@@ -45,4 +72,23 @@
     .personajes{
         padding: 230px 0;
     }
+    .listas{
+        .listaPersonajes{
+            div{
+                ul{
+                    ul{
+                        div{
+                            li{
+                                font-size: nth($fz, 4)!important ;
+                                img{
+                                    height: 30vw;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
 }
